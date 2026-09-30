@@ -1066,7 +1066,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Review Section
+          Feedback
         </h2>
       </div>
       <div class="row">
@@ -1082,7 +1082,7 @@
               <div>
                 <input type="email" class="form-control" placeholder="Your Email" />
               </div>
-              <div>
+              <!-- <div>
                 <select class="form-control nice-select wide">
 
                   <option value="0">
@@ -1112,19 +1112,20 @@
                     <i class="fa-solid fa-star"></i>
                   </option>
                 </select>
-              </div>
-              <div>
+              </div> -->
+              <!-- <div>
                 <input type="date" class="form-control">
-              </div>
+              </div> -->
               <div class="btn_box">
                 <button type="submit" name="submit"><a class="login-link" href="login.php">Send</a></button>
               </div>
             </form>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap"></div>
+         <!-- <div class="col-md-6"> -->
+          <!-- <div class="map_container "> -->
+            <!-- <div id="googleMap"></div> -->
+             <!-- <img src="images/logo with background.png" alt=""> -->
           </div>
         </div>
       </div>
