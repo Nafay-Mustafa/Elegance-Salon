@@ -1,5 +1,5 @@
-<!DOCTYPE php>
-<php>
+<!DOCTYPE html>
+<html>
 
 <head>
   <!-- Basic -->
@@ -36,6 +36,10 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap"
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
 
   <style>
@@ -50,6 +54,36 @@
             color: #fff;
         }
   </style>
+  <style>
+ 
+
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  text-align:center;
+}
+h2{
+  font-family: 'Dancing Script', cursive;
+  color: #0c0c0c;
+  font-size: 2.5rem;
+}
+.carousel{
+  width:90%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+  border: 2px solid #970909;
+}
+.wrapper .slick-dots li button:before {
+  font-size:20px;
+  color: #970909;
+}
+
+</style>
 </head>
 
 <body>
@@ -62,7 +96,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
         <a class="navbar-brand" href="index.php">
-          <img class="logo" src="images/logo with background.png" alt="">
+          <img class="logo" src="images/logo__2_-removebg-preview.png" alt="">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -73,13 +107,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav  mx-auto ">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/index">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.php">MAKEUP CATALOGUE</a>
+              <a class="nav-link" href="/menu">MAKEUP CATALOGUE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">ABOUT US</a>
+              <a class="nav-link" href="/about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">CONTACT</a>
             </li>
           </ul>
           <div class="user_option">
@@ -167,7 +207,7 @@
 
               </button>
             </form>
-            <a href="booknow.php" class="btn-grad">
+            <a href="/booknow" class="btn-grad">
               BOOK NOW
             </a>
           </div>
@@ -175,8 +215,10 @@
       </nav>
     </div>
   </header>
-  <!-- header section ends  -->
+
   @yield('content')
+
+
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
@@ -184,7 +226,8 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              <a href="/contact"> Contact Us</a>
+             
             </h4>
             <div class="contact_link_box">
               <a href="googlemap.com">
@@ -258,8 +301,37 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
+ <script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $('.carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        centerMode: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
+</script>  <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
@@ -285,6 +357,4 @@
   <script src="js/main.js"></script>
 </body>
 
-</php>
-
-
+</html>

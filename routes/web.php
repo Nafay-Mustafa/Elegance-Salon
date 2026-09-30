@@ -9,6 +9,9 @@ Route::get('/', function () {
 Route::get('/headerfooter', function () {
     return view('user.headerfooter');
 });
+Route::get('/booknow', function () {
+    return view('user.booknow');
+});
 Route::get('/carousel', function () {
     return view('user.carousel');
 });
