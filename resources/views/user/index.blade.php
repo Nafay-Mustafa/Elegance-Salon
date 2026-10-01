@@ -1072,53 +1072,26 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="number" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
-              <!-- <div>
-                <select class="form-control nice-select wide">
-
-                  <option value="0">
-                    <i class="fa-solid fa-star"></i>
-                  </option>
-                  <option value="1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </option>
-                  <option value="2">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-
-                  </option>
-                  <option value="3">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </option>
-                  <option value="4">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </option>
-                </select>
-              </div> -->
-              <!-- <div>
-                <input type="date" class="form-control">
-              </div> -->
-              <div class="btn_box">
-                <button type="submit" name="submit"><a class="login-link" href="login.php">Send</a></button>
-              </div>
+            <form action="{{ route('feedback.store') }}" method="POST">
+    @csrf
+    <div>
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+    </div>
+    <div>
+        <input type="number" name="phone" class="form-control" placeholder="Phone Number" required />
+    </div>
+    <div>
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+    </div>
+    <div>
+    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+</div>
+    <div class="btn_box">
+        <button type="submit">
+            Send
+        </button>
+    </div>
+</form>
             </form>
           </div>
         </div>

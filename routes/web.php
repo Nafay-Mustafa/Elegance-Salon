@@ -2,7 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\http\controller\admincontroller;
+use App\Http\Controllers\FeedbackController;
 
+Route::post('/feedback/store', [FeedbackController::class, 'store'])->name('feedback.store');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/feedbacks', [FeedbackController::class, 'index'])->name('admin.feedbacks');
+    Route::delete('/admin/feedbacks/{id}', [FeedbackController::class, 'destroy'])->name('admin.feedback.delete');
+});
 Route::get('/', function () {
     return view('welcome');
 });
