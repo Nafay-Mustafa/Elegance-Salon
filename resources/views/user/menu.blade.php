@@ -1,8 +1,6 @@
 
 @extends('user.headerfooter')
 @section('content')
-  <!-- food section -->
-
  
   <section class="food_section layout_padding">
     <div class="container">
@@ -40,7 +38,7 @@
                     <h6>
                       5,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -120,7 +118,7 @@
                     <h6>
                       20,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -200,7 +198,7 @@
                     <h6>
                       6,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -280,7 +278,7 @@
                     <h6>
                       12,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -359,7 +357,7 @@
                     <h6>
                       10,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -438,7 +436,7 @@
                     <h6>
                       7,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -518,7 +516,7 @@
                     <h6>
                       8,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -599,7 +597,7 @@
                     <h6>
                       15,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -679,7 +677,7 @@
                     <h6>
                       20,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -751,90 +749,8 @@
       </div> -->
     </div>
   </section>
-  <!-- end food section -->
 
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col">
-          <div class="footer_contact">
-            <h4>
-              Contact Us
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 footer-col">
-          <div class="footer_detail">
-            <a href="" class="footer-logo">
-              Feane
-            </a>
-            <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-              words, combined with
-            </p>
-            <div class="footer_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-pinterest" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 footer-col">
-          <h4>
-            Opening Hours
-          </h4>
-          <p>
-            Everyday
-          </p>
-          <p>
-            10.00 Am -10.00 Pm
-          </p>
-        </div>
-      </div>
-      <div class="footer-info">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://php.design/">Free php Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
-          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <!-- footer section -->
+
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -861,3 +777,5 @@
 </body>
 
 </php>
+
+@endsection

@@ -88,7 +88,7 @@
 
   <!-- offer section -->
   <video autoplay loop controls class="my-video" data-aos="fade-up" data-aos-duration="1500">
-    <source src="images/From Klickpin.com- 1078189967060691386-pin-id-1078189967060691386.mp4">
+    <source src="images/video.mp4">
   </video>
   <section class="offer_section layout_padding-bottom">
     <div class="offer_container">
@@ -106,7 +106,7 @@
                 <h6>
                   <span>20%</span> Off
                 </h6>
-                <a href="booknow.php" class="btn-grad">
+                <a href="/booknow" class="btn-grad">
                   BOOK NOW <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                     style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -177,7 +177,7 @@
                 <h6>
                   <span>15%</span> Off
                 </h6>
-                <a href="booknow.php" class="btn-grad">
+                <a href="/booknow" class="btn-grad">
                   BOOK NOW <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                     style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -312,7 +312,7 @@
                     <h6>
                       5,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -392,7 +392,7 @@
                     <h6>
                       20,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -472,7 +472,7 @@
                     <h6>
                       6,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="/booknow">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -534,7 +534,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
+          <!-- <div class="col-sm-6 col-lg-4 all pasta">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -1012,7 +1012,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div>
@@ -1050,7 +1050,7 @@
               are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
               the middle of text. All
             </p>
-            <a href="about.php">
+            <a href="/about">
               Read More
             </a>
           </div>

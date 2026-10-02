@@ -123,7 +123,7 @@ h2{
             </li>
           </ul>
           <div class="user_option">
-            <a href="login.php" class="user_link">
+            <!-- <a href="login.php" class="user_link">
               <i class="fa fa-user" aria-hidden="true"></i>
             </a>
             <a class="cart_link" href="#">
@@ -185,7 +185,7 @@ h2{
             <form class="form-inline">
               <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
 
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i> -->
                 <!-- <div>
                 <select class="form-control nice-select wide"> -->
                 <!-- <option value="" disabled selected>

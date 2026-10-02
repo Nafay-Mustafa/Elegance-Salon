@@ -61,8 +61,15 @@
         }
         
   </style>
+
+  @extends('user.headerfooter')
+@section('content')
+
+<br>
+<br>
+<br>
     <div class="container">
-       <img class="logo" src="images/logo with background.png" alt="">
+       <!-- <img class="logo" src="images/bg-remove.png" alt=""> -->
         <form action="" method="post">
             <h2 class="heading_container heading_center ">Book Appointment</h2>
             <br>
@@ -115,3 +122,4 @@
 </body>
 
 </php>
+@endsection
