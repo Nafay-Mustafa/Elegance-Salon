@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\http\controller\admincontroller;
 use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\AppointmentController;
+
+Route::post('/book-appointment', [AppointmentController::class, 'store'])->name('appointment.store');
+Route::get('/admin/appointments', [AppointmentController::class, 'index'])->middleware('auth')->name('admin.appointments');
+Route::delete('/admin/appointments/{id}', [AppointmentController::class, 'destroy'])->name('admin.appointments.delete');
 
 Route::post('/feedback/store', [FeedbackController::class, 'store'])->name('feedback.store');
 Route::middleware(['auth'])->group(function () {

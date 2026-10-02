@@ -68,28 +68,28 @@
 <br>
 <br>
 <br>
-    <div class="container">
-       <!-- <img class="logo" src="images/bg-remove.png" alt=""> -->
-        <form action="" method="post">
-            <h2 class="heading_container heading_center ">Book Appointment</h2>
-            <br>
-            <input type="text" name="name" placeholder="Your Name" class="form-control">
-            <br>
-            <input type="email" name="email" id="" placeholder="Your Email" class="form-control">
-            <br>
-            <input type="number" name="number" id="" placeholder="Your Contact Number" class="form-control">
-            <br>
-            <input type="date" name="date" id=""class="form-control" >
-            <br>
-            <input type="time" name="time" id="" class="form-control">
-            <br>
-            <textarea name="text" id="" placeholder="Service" class="form-control"></textarea>
-            <br>
-            
-            <button type="submit" name="submit" class="btn-grad mx-auto" ><a href="login.php">BOOK NOW</a></button>
-            <br>
-        </form>
-    </div>
+   <div class="container">
+    <h2 class="heading_container heading_center">Book Appointment</h2>
+    
+    <form action="{{ route('appointment.store') }}" method="POST">
+        @csrf
+        <br>
+        <input type="text" name="name" placeholder="Your Name" class="form-control">
+        <br>
+        <input type="email" name="email" id="" placeholder="Your Email" class="form-control">
+        <br>
+        <input type="number" name="phone" id="" placeholder="Your Contact Number" class="form-control">
+        <br>
+        <input type="date" name="date" id="" class="form-control">
+        <br>
+        <input type="time" name="time" id="" class="form-control">
+        <br>
+        <textarea name="service" id="" placeholder="Service" class="form-control"></textarea>
+        <br>
+        <button type="submit" class="btn-grad mx-auto">BOOK NOW</button>
+        <br>
+    </form>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
