@@ -63,8 +63,29 @@
   </style>
     <div class="container">
        <img class="logo" src="images/logo with background.png" alt="">
-        <form action="" method="post">
-            <h2 class="heading_container heading_center ">Book Appointment</h2>
+        <form action="/booknowform" method="post">
+          @csrf
+         @if(isset($notification))
+         <div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Booking</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       {{$notification}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+         @endif
+
+            <h2 class="heading_container heading_center">Book Appointment</h2>
             <br>
             <input type="text" name="name" placeholder="Your Name" class="form-control">
             <br>
@@ -72,14 +93,12 @@
             <br>
             <input type="number" name="number" id="" placeholder="Your Contact Number" class="form-control">
             <br>
-            <input type="date" name="date" id=""class="form-control" >
+            <input type="date" name="date" id="" class="form-control" >
             <br>
-            <input type="time" name="time" id="" class="form-control">
-            <br>
-            <textarea name="text" id="" placeholder="Service" class="form-control"></textarea>
+            <textarea name="service" id="" placeholder="Service" class="form-control"></textarea>
             <br>
             
-            <button type="submit" name="submit" class="btn-grad mx-auto" ><a href="login.php">BOOK NOW</a></button>
+            <button type="submit" name="submit" class="btn-grad mx-auto" > BOOK NOW</button>
             <br>
         </form>
     </div>

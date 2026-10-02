@@ -1,8 +1,10 @@
 @extends('user.headerfooter')
 @section('content')
+
+
   <div class="hero_area">
     <div class="bg-box ">
-      <img data-aos="fade-up" data-aos-duration="1500" src="images/banner.png" alt="">
+      <img data-aos="fade-up" data-aos-duration="1500" src="images/Elegance Salon.png" alt="">
     </div>
     <!-- end header section -->
     <!-- slider section -->
@@ -93,7 +95,8 @@
   <section class="offer_section layout_padding-bottom">
     <div class="offer_container">
       <div class="container ">
-        <div class="row">
+       <div class="row">
+        
           <div class="col-md-6 " data-aos="fade-up" data-aos-duration="5000">
             <div class="box ">
               <div class="img-box">
@@ -106,7 +109,7 @@
                 <h6>
                   <span>20%</span> Off
                 </h6>
-                <a href="booknow.php" class="btn-grad">
+                <a href="/booknow" class="btn-grad">
                   BOOK NOW <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                     style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -165,7 +168,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-duration="5000">
+      
+       
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="5000">
             <div class="box ">
               <div class="img-box">
                 <img src="images/baraat 2 bride.png" alt="">
@@ -177,7 +182,7 @@
                 <h6>
                   <span>15%</span> Off
                 </h6>
-                <a href="booknow.php" class="btn-grad">
+                <a href="/booknow" class="btn-grad">
                   BOOK NOW <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                     style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -234,8 +239,10 @@
                   </svg>
                 </a>
               </div>
-            </div>
           </div>
+            
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -279,7 +286,7 @@
   <section class="food_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 >
           Makeup Catagories
         </h2>
       </div>
@@ -1050,7 +1057,7 @@
               are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
               the middle of text. All
             </p>
-            <a href="about.php">
+            <a class="btn-grad" href="/about">
               Read More
             </a>
           </div>
@@ -1116,8 +1123,8 @@
               <!-- <div>
                 <input type="date" class="form-control">
               </div> -->
-              <div class="btn_box">
-                <button type="submit" name="submit"><a class="login-link" href="login.php">Send</a></button>
+              <div >
+                <button class="btn-grad" type="submit" name="submit"><a class="login-link" href="/login">Send</a></button>
               </div>
             </form>
           </div>

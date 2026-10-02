@@ -1,13 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\http\controller\admincontroller;
+use App\Http\Controllers\admincontroller;
+use App\Http\Controllers\usercontroller;
 
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/headerfooter', function () {
     return view('user.headerfooter');
+});
+Route::get('/contact', function () {
+    return view('user.contact');
 });
 Route::get('/booknow', function () {
     return view('user.booknow');
@@ -38,6 +42,9 @@ Route::get('/about', function () {
 Route::get('/menu', function () {
     return view('user.menu');
 });
+Route::get('/services', function () {
+    return view('user.services');
+});
 Route::get('/review', function () {
     return view('user.review');
 });
@@ -45,3 +52,14 @@ Route::get('/employee', function () {
     return view('user.employee');
 });
 
+Route::get('/menuupload', function () {
+    return view('user.menuupload');
+});
+
+
+
+
+
+Route::post('/menuupload' , [admincontroller::class, 'addMenu']);
+
+Route::get('/menu', [usercontroller::class, 'showmenu'])->name('showmenu');

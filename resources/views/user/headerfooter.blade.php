@@ -40,7 +40,12 @@
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+       <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
   <style>
     .my-video {
@@ -95,7 +100,7 @@ h2{
   <header class="header_section">
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="/index">
           <img class="logo" src="images/logo__2_-removebg-preview.png" alt="">
         </a>
 
@@ -126,7 +131,8 @@ h2{
             <a href="login.php" class="user_link">
               <i class="fa fa-user" aria-hidden="true"></i>
             </a>
-            <a class="cart_link" href="#">
+            <a class="cart_link" href="addtocart">
+        
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                 style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -355,6 +361,7 @@ $(document).ready(function () {
     AOS.init();
   </script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
