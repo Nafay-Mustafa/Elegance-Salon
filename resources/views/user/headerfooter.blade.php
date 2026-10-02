@@ -260,21 +260,27 @@ h2{
               Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
               words, combined with
             </p>
-            <div class="footer_social">
-              <a href="facebook.com">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="x.com">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="linkedin.com">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="instagram.com">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
+          <div class="footer_social">
+  <a href="https://www.facebook.com/" target="_blank">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+  </a>
 
-            </div>
+  <a href="https://twitter.com/" target="_blank">
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/" target="_blank">
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+  </a>
+
+  <a href="https://www.pinterest.com/" target="_blank">
+    <i class="fa fa-pinterest" aria-hidden="true"></i>
+  </a>
+</div>
           </div>
         </div>
         <div class="col-md-4 footer-col">
