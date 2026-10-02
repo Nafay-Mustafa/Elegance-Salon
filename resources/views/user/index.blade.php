@@ -97,7 +97,7 @@
           <div class="col-md-6 " data-aos="fade-up" data-aos-duration="5000">
             <div class="box ">
               <div class="img-box">
-                <img src="images/Stunning Pakistani Mayun Bride Look ✨ _ Mehndi Makeup Inspiration.png" alt="">
+                <img src="images/mayon-bride-look.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -168,7 +168,7 @@
           <div class="col-md-6" data-aos="fade-up" data-aos-duration="5000">
             <div class="box ">
               <div class="img-box">
-                <img src="images/baraat 2 bride.png" alt="">
+                <img src="images/Royal_Barat_Bridal_makeup_Look.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -248,27 +248,27 @@
 
     <div class="carousel">
         <div>
-            <img src="images/baraat 4 .png" alt="">
+            <img src="images/baraat4.png" alt="">
         </div>
 
         <div>
-            <img src="images/engagement bride1.png" alt="">
+            <img src="images/engagement_bride1.png" alt="">
         </div>
 
         <div>
-            <img src="images/mehndi 1.png" alt="">
+            <img src="images/mehndi1.png" alt="">
         </div>
 
         <div>
-            <img src="images/nikkah bride 2.png" alt="">
+            <img src="images/nikkah_bride2.png" alt="">
         </div>
 
         <div>
-            <img src="images/valima bride.png" alt="">
+            <img src="images/valima_bride.png" alt="">
         </div>
 
         <div>
-            <img src="images/baraat 3 bride.png" alt="">
+            <img src="images/baraat3bride.png" alt="">
         </div>
     </div>
 </div>
@@ -298,7 +298,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mayon 1.png" alt="">
+                  <img src="images/mayon1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -378,7 +378,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/nikkah bride 2.png" alt="">
+                  <img src="images/nikkah_bride2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -458,7 +458,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mehndi bride 2.png" alt="">
+                  <img src="images/mehndi_bride2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -538,7 +538,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/baraat 4 .png" alt="">
+                  <img src="images/baraat4.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -618,7 +618,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/engagement bride1.png" alt="">
+                  <img src="images/engagement_bride1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -697,7 +697,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mehndi 1.png" alt="">
+                  <img src="images/mehndi1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -776,7 +776,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/valima bride.png" alt="">
+                  <img src="images/valima_bride.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -856,7 +856,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img  src="images/baraat 2 bride.png"
+                  <img  src="images/baraat2bride.png"
                     alt="">
                 </div>
                 <div class="detail-box">
@@ -937,7 +937,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/baraat 3 bride.png" alt="">
+                  <img src="images/baraat3bride.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>

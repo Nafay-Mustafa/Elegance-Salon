@@ -3,6 +3,7 @@
 @section('content')
   <!-- food section -->
 
+ 
   <section class="food_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
@@ -25,7 +26,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f1.png" alt="">
+                  <img src="images/mayon1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -105,7 +106,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f2.png" alt="">
+                  <img src="images/nikkah_bride2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -185,7 +186,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f3.png" alt="">
+                  <img src="images/mehndi_bride2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -265,7 +266,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f4.png" alt="">
+                  <img src="images/baraat4.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -345,7 +346,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f5.png" alt="">
+                  <img src="images/engagement_bride1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -424,7 +425,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f6.png" alt="">
+                  <img src="images/mehndi1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -503,7 +504,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f7.png" alt="">
+                  <img src="images/valima_bride.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -583,7 +584,8 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f8.png" alt="">
+                  <img  src="images/baraat2bride.png"
+                    alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -663,7 +665,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f9.png" alt="">
+                  <img src="images/baraat3bride.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -741,15 +743,14 @@
           </div>
         </div>
       </div>
-      <div class="btn-box">
-        <a href="">
-          
+      <!-- <div>
+        <a href="/menu" class="btn-grad">
+
           View More
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
-
   <!-- end food section -->
 
   <!-- footer section -->

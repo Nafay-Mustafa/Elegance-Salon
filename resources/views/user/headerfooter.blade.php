@@ -96,7 +96,7 @@ h2{
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
         <a class="navbar-brand" href="index.php">
-          <img class="logo" src="images/logo__2_-removebg-preview.png" alt="">
+          <img class="logo" src="images/bg-remove.png" alt="">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
