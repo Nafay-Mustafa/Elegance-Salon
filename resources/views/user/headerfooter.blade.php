@@ -115,9 +115,9 @@ h2{
             <li class="nav-item">
               <a class="nav-link" href="/about">ABOUT US</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="/services">SERVICES</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="/contact">CONTACT</a>
             </li>
