@@ -48,18 +48,22 @@ Route::get('/services', function () {
 Route::get('/review', function () {
     return view('user.review');
 });
-Route::get('/employee', function () {
-    return view('user.employee');
+Route::get('/employeeform', function () {
+    return view('user.employeeform');
 });
 
 Route::get('/menuupload', function () {
     return view('user.menuupload');
 });
-
-
-
-
+Route::get('/employeepanel', function () {
+    return view('user.employeepanel');
+});
 
 Route::post('/menuupload' , [admincontroller::class, 'addMenu']);
 
 Route::get('/menu', [usercontroller::class, 'showmenu'])->name('showmenu');
+
+Route::post('/employeeform' , [admincontroller::class, 'addemployee']);
+
+Route::get('/employeepanel' , [admincontroller::class, 'showemployee']);
+Route::post('/deleteemployee/{id}' , [admincontroller::class, 'deleteemployee']);

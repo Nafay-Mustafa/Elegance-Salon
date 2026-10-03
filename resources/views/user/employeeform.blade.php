@@ -13,7 +13,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="images/favicon.png" type="">
 
-    <title> Elegance Salon </title>
+    <title> Staff Portal </title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -71,7 +71,9 @@
 <body>
     <div class="container">
         <img class="logo" src="images/logo with background.png" alt="">
-        <form action="" method="post">
+        
+        <form action="/employeeform" method="post">
+            @csrf
             <h2 class="heading_container heading_center">Create Account</h2>
             <br>
             <input type="text" name="name" id="" placeholder="Enter Name" class="form-control">
@@ -82,7 +84,7 @@
             <br>
             <input type="number" name="number" id="" placeholder="Enter Contact Number" class="form-control">
             <br>
-            <select name="Department" id="" class="form-control">
+            <select name="department" id="" class="form-control">
                 <option value="0">
                     Hair Stylist
                 </option>
@@ -92,12 +94,24 @@
                 <option value="2">
                     Manager
                 </option>
+                <option value="3">
+                    Receptionist
+                </option>
+                <option value="4">
+                    Assistant
+                </option>
+                <option value="5">
+                    Beautician
+                </option>
+                <option value="6">
+                    Nail Technician
+                </option>
+                <option value="6">
+                    Hair Colorist
+                </option>
             </select>
             <br>
-            <button type="submit" name="submit" class="btn-grad ms-auto">Create Account</button>
-            <a href="login.html" class="login-link">
-                Already have an account? Log In
-            </a>
+            <button type="submit" name="submit" class="btn-grad ms-auto">Register</button>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

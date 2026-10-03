@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Menu;
 
+
 class usercontroller extends Controller
 {
     
@@ -14,4 +15,5 @@ public function showmenu(){
     $allmenu=$menu->all();
     return view('user.menu', compact('allmenu'));
 }
+ 
 }

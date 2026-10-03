@@ -26,13 +26,6 @@
     <textarea  name="description" placeholder="Description" class="form-control"></textarea>
     <br>
     <input type="number" name="price" id="" placeholder="Price" class="form-control">
-    <br>
-    <select name="category" class="form-control">
-    <option value="burger">Engagement/Nikkah Makeup</option>
-    <option value="pizza">Mayoun/Mehndi</option>
-    <option value="pasta">Baraat Makeup</option>
-    <option value="fries">Valima Makeup</option>
-</select>
 <br>
     <button name="submit" type="submit"  class="btn btn-dark form-control" >Upload Menu</button>
 </form>

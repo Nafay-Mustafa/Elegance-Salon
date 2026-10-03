@@ -42,23 +42,42 @@
 
 
 <body>
+    <div class="container">
+         <h1 class="text-center w-100 m-2 p-2 text-dark">Employees</h1>
   <table class="table table-stiped table-dark p-2 m-2">
     <thead>
         <tr>
              <th>Name</th>
               <th>Email</th>
                <th>Contact Number</th>
-                <th>Date</th>
-                 <th>Time</th>
-                  <th>Service</th>
+               <th>Department</th>
+                 <th>Delete</th>
         </tr>
+      </thead>
+     <tbody>
+         @foreach($allemployee as $employee)
+         <tr>
+                    <td>{{ $employee->name }}</td>
+                    <td>{{ $employee->email }}</td>
+                    <td>{{ $employee->number }}</td>
+                    <td>{{ $employee->department }}</td>
+                    
+                    <td>
+            <form method="post" action="/deleteemployee/{{ $employee->id }}" >
+                @csrf
+             <hr>
+                <button type="submit" class="btn btn-danger my-auto m-4">Delete Account</button>
+            </form>
+             </td>
+            
+</tr>
+@endforeach
+     </tbody>
+     
 
-       
-
-    </thead>
+  
   </table>
-
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

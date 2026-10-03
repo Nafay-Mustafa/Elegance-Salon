@@ -1,11 +1,18 @@
 @extends('user.headerfooter')
 @section('content')
-
+<style>
+  .my_video {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+</style>
 
   <div class="hero_area">
     <div class="bg-box ">
-      <img data-aos="fade-up" data-aos-duration="1500" src="images/Elegance Salon.png" alt="">
-    </div>
+ <img src="images/Elegance Salon.png" alt="">    
+</div>
     <!-- end header section -->
     <!-- slider section -->
     <!-- <section class="slider_section ">
