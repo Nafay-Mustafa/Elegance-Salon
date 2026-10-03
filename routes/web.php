@@ -4,6 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\http\controller\admincontroller;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\ContactController;
+
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/admin/contacts', [ContactController::class, 'index'])->name('admin.contacts');
+Route::delete('/admin/contacts/{id}', [ContactController::class, 'destroy'])->name('admin.contacts.delete');
 
 Route::post('/book-appointment', [AppointmentController::class, 'store'])->name('appointment.store');
 Route::get('/admin/appointments', [AppointmentController::class, 'index'])->middleware('auth')->name('admin.appointments');
@@ -15,7 +20,7 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/admin/feedbacks/{id}', [FeedbackController::class, 'destroy'])->name('admin.feedback.delete');
 });
 Route::get('/', function () {
-    return view('welcome');
+    return view('user.index');
 });
 Route::get('/headerfooter', function () {
     return view('user.headerfooter');
@@ -55,4 +60,6 @@ Route::get('/review', function () {
 Route::get('/employee', function () {
     return view('user.employee');
 });
-
+Route::get('/contact', function () {
+    return view('user.contact');
+});
