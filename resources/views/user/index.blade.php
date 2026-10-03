@@ -11,7 +11,7 @@
 
   <div class="hero_area">
     <div class="bg-box ">
- <img src="images/Elegance Salon.png" alt="">    
+ <img src="images/final banner picture.png" alt="" data-aos="fade-up" data-aos-duration="1500">    
 </div>
     <!-- end header section -->
     <!-- slider section -->
