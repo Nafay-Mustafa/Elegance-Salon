@@ -505,39 +505,31 @@ h2{
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              <a href="/contact"> Contact Us</a>
-             
-            </h4>
+  <a href="/contact" style="color:#ffffff !important; text-decoration:none;"> Contact Us</a>
+</h4>
             <div class="contact_link_box">
-              <a href="googlemap.com">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="whatsapp.com">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +92 1234567890
-                </span>
-              </a>
-              <a href="gmail.com">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  elegancesalon@gmail.com
-                </span>
-              </a>
-            </div>
+  <a href="https://www.google.com/maps/search/?api=1&query=Elegance+Salon+Kunri" target="_blank">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <span>Location</span>
+  </a>
+  <a href="https://wa.me/923072487922" target="_blank">
+    <i class="fa fa-phone" aria-hidden="true"></i>
+    <span>Call +92 3072487922</span>
+  </a>
+  <a href="mailto:elegancesalon@gmail.com">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <span>elegancesalon@gmail.com</span>
+  </a>
+</div>
           </div>
         </div>
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Feane
+              Elegance Salon
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-              words, combined with
+             Enhancing your natural beauty with expert bridal & party makeup, hair styling and skin care services. Your beauty, our passion.
             </p>
             <div class="footer_social">
   <a href="https://www.facebook.com/" target="_blank">

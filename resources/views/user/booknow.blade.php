@@ -68,8 +68,14 @@
 <br>
 <br>
 <br>
-   <div class="container">
-    <h2 class="heading_container heading_center">Book Appointment</h2>
+<div style="max-width:850px; margin:0 auto; background:#fff; padding:25px; border-radius:12px;">
+   <div style="text-align:center; margin-bottom:15px;">
+    <img src="{{ asset('images/bg_remove_logo_2.png') }}" alt="Elegance Salon" style="height:55px; object-fit:contain;">
+    <h2 style="font-family:'Dancing Script', cursive; font-style:italic; font-size:32px; color:#0a1128; margin-top:10px;">
+        Book Appointment
+    </h2>
+    <p style="color:#666; font-size:14px; margin-top:5px;">Your Beauty, Our Passion</p>
+</div>
     
     <form action="{{ route('appointment.store') }}" method="POST">
         @csrf
@@ -89,6 +95,7 @@
         <button type="submit" class="btn-grad mx-auto">BOOK NOW</button>
         <br>
     </form>
+    </div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
