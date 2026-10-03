@@ -97,7 +97,7 @@
 
   <!-- offer section -->
   <video autoplay loop controls class="my-video" data-aos="fade-up" data-aos-duration="1500">
-    <source src="images/From Klickpin.com- 1078189967060691386-pin-id-1078189967060691386.mp4">
+    <source src="images/video.mp4">
   </video>
   <section class="offer_section layout_padding-bottom">
     <div class="offer_container">
@@ -107,7 +107,7 @@
           <div class="col-md-6 " data-aos="fade-up" data-aos-duration="5000">
             <div class="box ">
               <div class="img-box">
-                <img src="images/Stunning Pakistani Mayun Bride Look ✨ _ Mehndi Makeup Inspiration.png" alt="">
+                <img src="images/mayon-bride-look.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -116,7 +116,7 @@
                 <h6>
                   <span>20%</span> Off
                 </h6>
-                <a href="/booknow" class="btn-grad">
+                <a href="{{ Auth::check() ? url('/booknow') : route('login') }}" class="btn-grad">
                   BOOK NOW <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                     style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -180,7 +180,7 @@
             <div class="col-md-6" data-aos="fade-up" data-aos-duration="5000">
             <div class="box ">
               <div class="img-box">
-                <img src="images/baraat 2 bride.png" alt="">
+                <img src="images/Royal_Barat_Bridal_makeup_Look.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -189,7 +189,7 @@
                 <h6>
                   <span>15%</span> Off
                 </h6>
-                <a href="/booknow" class="btn-grad">
+                <a href="{{ Auth::check() ? url('/booknow') : route('login') }}" class="btn-grad">
                   BOOK NOW <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                     style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -262,27 +262,27 @@
 
     <div class="carousel">
         <div>
-            <img src="images/baraat 4 .png" alt="">
+            <img src="images/baraat4.png" alt="">
         </div>
 
         <div>
-            <img src="images/engagement bride1.png" alt="">
+            <img src="images/engagement_bride1.png" alt="">
         </div>
 
         <div>
-            <img src="images/mehndi 1.png" alt="">
+            <img src="images/mehndi1.png" alt="">
         </div>
 
         <div>
-            <img src="images/nikkah bride 2.png" alt="">
+            <img src="images/nikkah_bride2.png" alt="">
         </div>
 
         <div>
-            <img src="images/valima bride.png" alt="">
+            <img src="images/valima_bride.png" alt="">
         </div>
 
         <div>
-            <img src="images/baraat 3 bride.png" alt="">
+            <img src="images/baraat3bride.png" alt="">
         </div>
     </div>
 </div>
@@ -312,7 +312,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mayon 1.png" alt="">
+                  <img src="images/mayon1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -326,7 +326,7 @@
                     <h6>
                       5,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -392,7 +392,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/nikkah bride 2.png" alt="">
+                  <img src="images/nikkah_bride2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -406,7 +406,7 @@
                     <h6>
                       20,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -472,7 +472,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mehndi bride 2.png" alt="">
+                  <img src="images/mehndi_bride2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -486,7 +486,7 @@
                     <h6>
                       6,000 PKR
                     </h6>
-                    <a href="">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -548,11 +548,11 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
+          <!-- <div class="col-sm-6 col-lg-4 all pasta">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/baraat 4 .png" alt="">
+                  <img src="images/baraat4.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -632,7 +632,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/engagement bride1.png" alt="">
+                  <img src="images/engagement_bride1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -711,7 +711,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/mehndi 1.png" alt="">
+                  <img src="images/mehndi1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -790,7 +790,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/valima bride.png" alt="">
+                  <img src="images/valima_bride.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -870,7 +870,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img  src="images/baraat 2 bride.png"
+                  <img  src="images/baraat2bride.png"
                     alt="">
                 </div>
                 <div class="detail-box">
@@ -951,7 +951,7 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/baraat 3 bride.png" alt="">
+                  <img src="images/baraat3bride.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -1026,7 +1026,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div>
@@ -1055,16 +1055,13 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Feane
+                Elegance Salon
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              Elegance Salon was started with a dream to make every bride feel confident and beautiful on her special day. We believe makeup is not just color, it's confidence.
             </p>
-            <a class="btn-grad" href="/about">
+            <a href="/about">
               Read More
             </a>
           </div>
@@ -1086,53 +1083,26 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="number" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
-              <!-- <div>
-                <select class="form-control nice-select wide">
-
-                  <option value="0">
-                    <i class="fa-solid fa-star"></i>
-                  </option>
-                  <option value="1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </option>
-                  <option value="2">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-
-                  </option>
-                  <option value="3">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </option>
-                  <option value="4">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </option>
-                </select>
-              </div> -->
-              <!-- <div>
-                <input type="date" class="form-control">
-              </div> -->
-              <div >
-                <button class="btn-grad" type="submit" name="submit"><a class="login-link" href="/login">Send</a></button>
-              </div>
+            <form action="{{ route('feedback.store') }}" method="POST">
+    @csrf
+    <div>
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+    </div>
+    <div>
+        <input type="number" name="phone" class="form-control" placeholder="Phone Number" required />
+    </div>
+    <div>
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+    </div>
+    <div>
+    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+</div>
+    <div class="btn_box">
+        <button type="submit">
+            Send
+        </button>
+    </div>
+</form>
             </form>
           </div>
         </div>
@@ -1149,7 +1119,7 @@
 
   <!-- client section -->
 
-  <section class="client_section layout_padding-bottom">
+  <!-- <section class="client_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
         <h2>
@@ -1199,7 +1169,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end client section -->
 

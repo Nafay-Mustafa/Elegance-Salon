@@ -1,8 +1,7 @@
 
 @extends('user.headerfooter')
 @section('content')
-  <!-- food section -->
-
+ 
   <section class="food_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
@@ -68,6 +67,5 @@
     </div>
   </section>
 
-  <!-- end food section -->
 
  @endsection

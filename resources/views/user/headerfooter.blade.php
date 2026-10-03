@@ -141,8 +141,8 @@ h2{
   <header class="header_section">
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="/index">
-          <img class="logo" src="images/logo__2_-removebg-preview.png" alt="">
+        <a class="navbar-brand" href="index.php">
+          <img class="logo" src="images/bg-remove.png" alt="">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -161,27 +161,118 @@ h2{
             <li class="nav-item">
               <a class="nav-link" href="/about">ABOUT US</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="/services">SERVICES</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="/contact">CONTACT</a>
             </li>
           </ul>
           <div class="user_option">
-           
-            <div class="user-menu">
-    
-
-            
+            <!-- <a href="login.php" class="user_link">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <a class="cart_link" href="#">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                  </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+              </svg>
+            </a>
             <form class="form-inline">
               <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
 
+                <i class="fa fa-search" aria-hidden="true"></i> -->
+                <!-- <div>
+                <select class="form-control nice-select wide"> -->
+                <!-- <option value="" disabled selected>
+                  </option>
+                  <option value="">
+                    makeup catagory
+                  </option>
+                  <option value="">
+                    3
+                  </option>
+                  <option value="">
+                    4
+                  </option>
+                  <option value="">
+                    5
+                  </option>
+                </select>
+              </div> -->
+
               </button>
             </form>
-            <a href="/booknow" class="btn-grad">
+            <a href="{{ Auth::check() ? url('/booknow') : route('login') }}" class="btn-grad">
               BOOK NOW
             </a>
+           @auth
+<div style="display:flex; align-items:center; gap:10px; margin-left:12px; background:rgba(255,255,255,0.12); padding:6px 14px; border-radius:25px;">
+    @if(Auth::check() && Auth::user()->email == 'admin@elegancesalon.com')
+    <a href="{{ route('admin.appointments') }}" style="background:rgba(255,255,255,0.12); color:white; padding:8px 18px; border-radius:25px; font-size:13px; text-decoration:none;">VIEW RECORDS</a>
+@endif
+  <span style="color:#fff; font-size:13px; font-weight:500;">Hi, {{ Str::limit(Auth::user()->name, 10) }}</span>
+  <form method="POST" action="{{ route('logout') }}" style="display:inline; margin:0;">
+    @csrf
+    <button type="submit" style="background: linear-gradient(90deg, #000000ff, #505050ff); border:none; color:white; border-radius:20px; padding:4px 12px; font-size:11px; font-weight:bold; cursor:pointer;">LOGOUT</button>
+  </form>
+</div>
+@else
+<div style="display:flex; align-items:center; gap:0px; margin-left:30px;">
+  <a href="{{ route('login') }}" style="background:rgba(255,255,255,0.12); color:white; padding:8px 18px; border-radius:25px; font-size:13px; text-decoration:none;">LOGIN</a>
+  <a href="{{ route('register') }}" style="background:rgba(255,255,255,0.12); color:white; padding:8px 18px; border-radius:25px; font-size:13px; text-decoration:none;">REGISTER</a>
+</div>
+@endauth
           </div>
         </div>
       </nav>
@@ -198,55 +289,53 @@ h2{
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              <a href="/contact"> Contact Us</a>
-             
-            </h4>
-            <div class="contact_link_box">
-              <a href="googlemap.com">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="whatsapp.com">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +92 1234567890
-                </span>
-              </a>
-              <a href="gmail.com">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  elegancesalon@gmail.com
-                </span>
-              </a>
-            </div>
+  <a href="/contact" style="color:#ffffff !important; text-decoration:none;"> Contact Us</a>
+</h4>
+           <div class="contact_link_box">
+  <a href="https://www.google.com/maps/search/?api=1&query=Elegance+Salon+Kunri" target="_blank">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <span>Location</span>
+  </a>
+  <a href="https://wa.me/923072487922" target="_blank">
+    <i class="fa fa-phone" aria-hidden="true"></i>
+    <span>Call +92 3072487922</span>
+  </a>
+  <a href="mailto:elegancesalon@gmail.com">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <span>elegancesalon@gmail.com</span>
+  </a>
+</div>
           </div>
         </div>
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Feane
+              Elegance Salon
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-              words, combined with
+             Enhancing your natural beauty with expert bridal & party makeup, hair styling and skin care services. Your beauty, our passion.
             </p>
-            <div class="footer_social">
-              <a href="facebook.com">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="x.com">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="linkedin.com">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="instagram.com">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
+          <div class="footer_social">
+  <a href="https://www.facebook.com/" target="_blank">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+  </a>
 
-            </div>
+  <a href="https://twitter.com/" target="_blank">
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/" target="_blank">
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+  </a>
+
+  <a href="https://www.pinterest.com/" target="_blank">
+    <i class="fa fa-pinterest" aria-hidden="true"></i>
+  </a>
+</div>
           </div>
         </div>
         <div class="col-md-4 footer-col">
@@ -264,7 +353,7 @@ h2{
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://php.design/">Elegance Salon</a><br><br>
+          <a href="/">Elegance Salon</a><br><br>
 
         </p>
       </div>

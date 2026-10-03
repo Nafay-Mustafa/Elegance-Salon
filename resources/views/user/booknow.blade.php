@@ -61,47 +61,42 @@
         }
         
   </style>
-    <div class="container">
-       <img class="logo" src="images/logo with background.png" alt="">
-        <form action="/booknowform" method="post">
-          @csrf
-         @if(isset($notification))
-         <div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Booking</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-       {{$notification}}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-         @endif
 
-            <h2 class="heading_container heading_center">Book Appointment</h2>
-            <br>
-            <input type="text" name="name" placeholder="Your Name" class="form-control">
-            <br>
-            <input type="email" name="email" id="" placeholder="Your Email" class="form-control">
-            <br>
-            <input type="number" name="number" id="" placeholder="Your Contact Number" class="form-control">
-            <br>
-            <input type="date" name="date" id="" class="form-control" >
-            <br>
-            <textarea name="service" id="" placeholder="Service" class="form-control"></textarea>
-            <br>
-            
-            <button type="submit" name="submit" class="btn-grad mx-auto" > BOOK NOW</button>
-            <br>
-        </form>
+  @extends('user.headerfooter')
+@section('content')
+
+<br>
+<br>
+<br>
+<div style="max-width:850px; margin:0 auto; background:#fff; padding:25px; border-radius:12px;">
+   <div style="text-align:center; margin-bottom:15px;">
+    <img src="{{ asset('images/bg_remove_logo_2.png') }}" alt="Elegance Salon" style="height:55px; object-fit:contain;">
+    <h2 style="font-family:'Dancing Script', cursive; font-style:italic; font-size:32px; color:#0a1128; margin-top:10px;">
+        Book Appointment
+    </h2>
+    <p style="color:#666; font-size:14px; margin-top:5px;">Your Beauty, Our Passion</p>
+</div>
+    
+    <form action="{{ route('appointment.store') }}" method="POST">
+        @csrf
+        <br>
+        <input type="text" name="name" placeholder="Your Name" class="form-control">
+        <br>
+        <input type="email" name="email" id="" placeholder="Your Email" class="form-control">
+        <br>
+        <input type="number" name="phone" id="" placeholder="Your Contact Number" class="form-control">
+        <br>
+        <input type="date" name="date" id="" class="form-control">
+        <br>
+        <input type="time" name="time" id="" class="form-control">
+        <br>
+        <textarea name="service" id="" placeholder="Service" class="form-control"></textarea>
+        <br>
+        <button type="submit" class="btn-grad mx-auto">BOOK NOW</button>
+        <br>
+    </form>
     </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
@@ -134,3 +129,4 @@
 </body>
 
 </php>
+@endsection
