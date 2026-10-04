@@ -6,7 +6,7 @@
 </head>
 <body class="p-4">
     <div class="container">
-        <h2 class="mb-4">All Appointments - Elegance Salon</h2>
+        <h2 class="mb-4">All Bookings - Elegance Salon</h2>
         <div class="mb-3" style="display:flex; gap:10px;">
     <a href="/index" class="btn btn-secondary">Back to Home</a>
     <a href="{{ url('/admin/contacts') }}" class="btn" style="background:#ff2a6d; color:white;">View Messages</a>

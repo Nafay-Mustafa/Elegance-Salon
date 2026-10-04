@@ -106,7 +106,7 @@
                 <h6>
                   <span>20%</span> Off
                 </h6>
-                <a href="/booknow" class="btn-grad">
+                <a href="{{ Auth::check() ? url('/booknow') : route('login') }}" class="btn-grad">
                   BOOK NOW <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                     style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -177,7 +177,7 @@
                 <h6>
                   <span>15%</span> Off
                 </h6>
-                <a href="/booknow" class="btn-grad">
+                <a href="{{ Auth::check() ? url('/booknow') : route('login') }}" class="btn-grad">
                   BOOK NOW <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                     style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -312,7 +312,7 @@
                     <h6>
                       5,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -392,7 +392,7 @@
                     <h6>
                       20,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -472,7 +472,7 @@
                     <h6>
                       6,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -1041,14 +1041,11 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                We Are Feane
+                Elegance Salon
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              Elegance Salon was started with a dream to make every bride feel confident and beautiful on her special day. We believe makeup is not just color, it's confidence.
             </p>
             <a href="/about">
               Read More

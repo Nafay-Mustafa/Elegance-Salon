@@ -38,7 +38,7 @@
                     <h6>
                       5,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -118,7 +118,7 @@
                     <h6>
                       20,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -198,7 +198,7 @@
                     <h6>
                       6,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -278,7 +278,7 @@
                     <h6>
                       12,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -357,7 +357,7 @@
                     <h6>
                       10,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -436,7 +436,7 @@
                     <h6>
                       7,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -516,7 +516,7 @@
                     <h6>
                       8,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -597,7 +597,7 @@
                     <h6>
                       15,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -677,7 +677,7 @@
                     <h6>
                       20,000 PKR
                     </h6>
-                    <a href="/booknow">
+                    <a href="{{ Auth::check() ? url('/booknow') : route('login') }}">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
                         style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">

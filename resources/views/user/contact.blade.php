@@ -207,7 +207,7 @@ h2{
 
               </button>
             </form>
-            <a href="{{ Auth::check() ? '/dashboard#booking' : route('login') }}" class="btn-grad">
+            <a href="{{ Auth::check() ? url('/booknow') : route('login') }}" class="btn-grad">
               BOOK NOW
             </a>
            @auth

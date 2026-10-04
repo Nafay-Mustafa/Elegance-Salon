@@ -9,7 +9,7 @@
     <h2 class="mb-4">Contact Queries</h2>
      <div class="mb-3" style="display:flex; gap:10px;">
     <a href="/index" class="btn btn-secondary">Back to Home</a>
-    <a href="{{ url('/admin/appointments') }}" class="btn" style="background:#ff2a6d; color:white;">View Appointments</a>
+    <a href="{{ url('/admin/appointments') }}" class="btn" style="background:#ff2a6d; color:white;">View Bookings</a>
 <a href="{{ url('/admin/feedbacks') }}" class="btn" style="background:#17a2b8; color:white;">View Feedbacks</a>
 </div>
     <table class="table table-bordered table-striped">
