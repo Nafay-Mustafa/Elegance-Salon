@@ -104,8 +104,8 @@
       <div class="container ">
        <div class="row">
         
-          <div class="col-md-6 " data-aos="fade-up" data-aos-duration="5000">
-            <div class="box ">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500"  >
+            <div class="box" style="border-radius:30px;">
               <div class="img-box">
                 <img src="images/mayon-bride-look.png" alt="">
               </div>
@@ -177,8 +177,8 @@
           </div>
       
        
-            <div class="col-md-6" data-aos="fade-up" data-aos-duration="5000">
-            <div class="box ">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500" >
+            <div class="box" style="border-radius:20px;">
               <div class="img-box">
                 <img src="images/Royal_Barat_Bridal_makeup_Look.png" alt="">
               </div>
@@ -257,8 +257,8 @@
 
   <!-- end offer section -->
 <!-- slider img section -->
-     <div class="wrapper">
-    <h2>Gorgeous Brides</h2>
+     <div class="wrapper"  >
+    <h2 style="margin: 10px;">Gorgeous Brides</h2>
 
     <div class="carousel">
         <div>
@@ -1054,7 +1054,7 @@
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
+              <h2 style="color:#ffffff;">
                 Elegance Salon
               </h2>
             </div>

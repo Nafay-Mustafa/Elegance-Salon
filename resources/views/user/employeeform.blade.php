@@ -85,28 +85,28 @@
             <input type="number" name="number" id="" placeholder="Enter Contact Number" class="form-control">
             <br>
             <select name="department" id="" class="form-control">
-                <option value="0">
+                <option value="Hair Stylist">
                     Hair Stylist
                 </option>
-                <option value="1">
+                <option value="Makeup Artist">
                     Makeup Artist
                 </option>
-                <option value="2">
+                <option value="Manager">
                     Manager
                 </option>
-                <option value="3">
+                <option value="Receptionist">
                     Receptionist
                 </option>
-                <option value="4">
+                <option value="Assistant">
                     Assistant
                 </option>
-                <option value="5">
+                <option value="Beautician">
                     Beautician
                 </option>
-                <option value="6">
+                <option value="Nail Technician">
                     Nail Technician
                 </option>
-                <option value="6">
+                <option value="Hair Colorist">
                     Hair Colorist
                 </option>
             </select>

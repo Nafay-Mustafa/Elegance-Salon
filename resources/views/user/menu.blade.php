@@ -25,7 +25,7 @@
 
         <div class="col-sm-6 col-lg-4 all">
 
-            <div class="box">
+            <div class="box"  data-aos="fade-up" data-aos-duration="1500">
                 <div>
 
                     <div class="img-box">
