@@ -1,60 +1,62 @@
-<x-guest-layout>
-    <x-authentication-card>
-        <x-slot name="logo">
-            <x-authentication-card-logo />
-        </x-slot>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elegance Salon - Register</title>
+    <style>
+        body{margin:0; font-family:'Poppins', sans-serif; background:#0f0f1a; display:flex; height:100vh; overflow:hidden;}
+        .left{width:50%; background:url('/images/salon.png') center/cover no-repeat; position:relative;}
+        .left::after{content:''; position:absolute; inset:0; background:linear-gradient(45deg, rgba(0,0,0,0.7), rgba(255,65,108,0.5));}
+        .left-text{position:absolute; bottom:50px; left:40px; z-index:2; color:white;}
+        .left-text h1{font-size:40px; margin:0;}
+        .left-text p{opacity:0.8; max-width:350px;}
+        .right{width:50%; display:flex; align-items:center; justify-content:center; background:#151525; overflow-y:auto;}
+        .card{background:#1e1e32; padding:35px 40px; border-radius:15px; width:380px; box-shadow:0 10px 30px rgba(0,0,0,0.5); margin:20px 0;}
+        .card h2{color:white; text-align:center; margin-bottom:20px;}
+        label{color:#aaa; font-size:13px;}
+        input{width:100%; padding:11px; margin:6px 0 12px 0; border-radius:8px; border:1px solid #333; background:#2a2a45; color:white; outline:none;}
+        input:focus{border-color:#ff416c;}
+        .btn-register{width:100%; padding:12px; background: linear-gradient(90deg, #ff416c, #ff4b2b); border:none; border-radius:8px; color:white; font-weight:bold; cursor:pointer; margin-top:10px;}
+        .links{text-align:center; margin-top:15px; font-size:12px; color:#aaa;}
+        .links a{color:#ff416c; text-decoration:none; font-weight:bold;}
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="left-text">
+            <h1>Join Elegance</h1>
+            <p>Create your account and get 40% off on our Glow Up Packages. Book your bridal look today.</p>
+        </div>
+    </div>
+    <div class="right">
+        <div class="card">
+            <h2>Create Account</h2>
+            <form method="POST" action="{{ route('register') }}">
+                @csrf
+                <label>Name</label>
+                <input type="text" name="name" value="{{ old('name') }}" required placeholder="Your Name">
 
-        <x-validation-errors class="mb-4" />
+                <label>Email</label>
+                <input type="email" name="email" value="{{ old('email') }}" required placeholder="you@example.com">
 
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
+                <label>Password</label>
+                <input type="password" name="password" required placeholder="••••••••">
 
-            <div>
-                <x-label for="name" value="{{ __('Name') }}" />
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            </div>
+                <label>Confirm Password</label>
+                <input type="password" name="password_confirmation" required placeholder="••••••••">
 
-            <div class="mt-4">
-                <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            </div>
-
-            <div class="mt-4">
-                <x-label for="password" value="{{ __('Password') }}" />
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
-            </div>
-
-            <div class="mt-4">
-                <x-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
-            </div>
-
-            @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                <div class="mt-4">
-                    <x-label for="terms">
-                        <div class="flex items-center">
-                            <x-checkbox name="terms" id="terms" required />
-
-                            <div class="ms-2">
-                                {!! __('I agree to the :terms_of_service and :privacy_policy', [
-                                        'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Terms of Service').'</a>',
-                                        'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Privacy Policy').'</a>',
-                                ]) !!}
-                            </div>
-                        </div>
-                    </x-label>
+                @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
+                <div style="color:#aaa; font-size:11px; margin:10px 0;">
+                    <input type="checkbox" name="terms" style="width:auto;"> I agree to Terms and Privacy Policy
                 </div>
-            @endif
+                @endif
 
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
+                <button type="submit" class="btn-register">REGISTER</button>
 
-                <x-button class="ms-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-authentication-card>
-</x-guest-layout>
+                <div class="links">
+                    Already registered? <a href="{{ route('login') }}">Login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

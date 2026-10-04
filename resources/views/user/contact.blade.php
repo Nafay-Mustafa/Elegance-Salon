@@ -207,11 +207,29 @@ h2{
 
               </button>
             </form>
-            <a href="/booknow" class="btn-grad">
+            <a href="{{ Auth::check() ? '/dashboard#booking' : route('login') }}" class="btn-grad">
               BOOK NOW
             </a>
+           @auth
+<div style="display:flex; align-items:center; gap:10px; margin-left:12px; background:rgba(255,255,255,0.12); padding:6px 14px; border-radius:25px;">
+   @if(Auth::check() && Auth::user()->email == 'admin@elegancesalon.com')
+    <a href="{{ route('admin.appointments') }}" style="background:rgba(255,255,255,0.12); color:white; padding:8px 18px; border-radius:25px; font-size:13px; text-decoration:none;">VIEW RECORDS</a>
+@endif
+  <span style="color:#fff; font-size:13px; font-weight:500;">Hi, {{ Str::limit(Auth::user()->name, 10) }}</span>
+  <form method="POST" action="{{ route('logout') }}" style="display:inline; margin:0;">
+    @csrf
+    <button type="submit" style="background: linear-gradient(90deg, #000000ff, #505050ff); border:none; color:white; border-radius:20px; padding:4px 12px; font-size:11px; font-weight:bold; cursor:pointer;">LOGOUT</button>
+  </form>
+</div>
+@else
+<div style="display:flex; align-items:center; gap:0px; margin-left:30px;">
+  <a href="{{ route('login') }}" style="background:rgba(255,255,255,0.12); color:white; padding:8px 18px; border-radius:25px; font-size:13px; text-decoration:none;">LOGIN</a>
+  <a href="{{ route('register') }}" style="background:rgba(255,255,255,0.12); color:white; padding:8px 18px; border-radius:25px; font-size:13px; text-decoration:none;">REGISTER</a>
+</div>
+@endauth
           </div>
         </div>
+        
       </nav>
     </div>
   </header>

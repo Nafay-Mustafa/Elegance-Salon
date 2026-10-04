@@ -7,7 +7,11 @@
 <body class="p-4">
     <div class="container">
         <h2 class="mb-4">Customer Feedbacks</h2>
-        <a href="/" class="btn btn-secondary mb-3">Back to Home</a>
+         <div class="mb-3" style="display:flex; gap:10px;">
+    <a href="/index" class="btn btn-secondary">Back to Home</a>
+    <a href="{{ url('/admin/contacts') }}" class="btn" style="background:#ff2a6d; color:white;">View Messages</a>
+<a href="{{ url('/admin/appointments') }}" class="btn" style="background:#17a2b8; color:white;">View Appointments</a>
+</div>
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
                 <tr>

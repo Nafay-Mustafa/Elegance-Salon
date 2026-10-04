@@ -37,13 +37,9 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
-        Route::get('/home', function () {
-    return view('home');
-});
+        return view('user.index');
     })->name('dashboard');
 });
-
 Route::get('/index', function () {
     return view('user.index');
 });
