@@ -1076,7 +1076,7 @@
   <section class="book_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
+        <h2 style="margin-top:20px; ,margin-bottom:20px;">
           Feedback
         </h2>
       </div>
@@ -1098,7 +1098,7 @@
     <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
 </div>
     <div class="btn_box">
-        <button type="submit">
+        <button type="submit" style=margin:20px;>
             Send
         </button>
     </div>
