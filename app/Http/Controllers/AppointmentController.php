@@ -10,13 +10,14 @@ class AppointmentController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required',
-            'date' => 'required',
+            'date' => 'required|after_or_equal:today',
             'time' => 'required',
-            'service' => 'required'
+            'service' => 'nullable',
+            'status' => 'required',
         ]);
 
         Appointment::create($request->all());
-        return back()->with('success', 'Appointment Booked!');
+        return back()->with('success', 'Thank you for booking at Elegance Salon! We will reach you soon. Our team will contact you shortly.');
     }
 
     public function index(){

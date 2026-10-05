@@ -74,29 +74,87 @@
     <h2 style="font-family:'Dancing Script', cursive; font-style:italic; font-size:32px; color:#0a1128; margin-top:10px;">
         Book Appointment
     </h2>
+    @if(session('success'))
+<div class="alert alert-success" style="background: #d4edda; color: #155724; padding: 15px; border-radius: 10px; text-align:center; margin-bottom:20px;">
+    {{ session('success') }}
+</div>
+@endif
     <p style="color:#666; font-size:14px; margin-top:5px;">Your Beauty, Our Passion</p>
 </div>
     
     <form action="{{ route('appointment.store') }}" method="POST">
         @csrf
         <br>
-        <input type="text" name="name" placeholder="Your Name" class="form-control">
+        <input type="text" name="name" placeholder="Your Name" class="form-control" required>
         <br>
-        <input type="email" name="email" id="" placeholder="Your Email" class="form-control">
+        <input type="email" name="email" id="" placeholder="Your Email" class="form-control" required>
         <br>
-        <input type="number" name="phone" id="" placeholder="Your Contact Number" class="form-control">
+        <input type="number" name="phone" id="" placeholder="Your Contact Number" class="form-control" required>
         <br>
-        <input type="date" name="date" id="" class="form-control">
+        <input type="date" name="date" id="" class="form-control" required min="{{ date('Y-m-d') }}" id="appointment_date">
         <br>
-        <input type="time" name="time" id="" class="form-control">
+        <input type="time" name="time" id="" class="form-control" required>
         <br>
-        <textarea name="service" id="" placeholder="Service" class="form-control"></textarea>
+        <select name="status" class="form-control" required>
+    <option value="" disabled selected>Select Service / Status</option>
+    <option value="Bridal Makeup">Bridal Makeup</option>
+    <option value="Valima Makeup">Valima Makeup</option>
+    <option value="Mehndi / Mayoun Makeup">Mehndi / Mayoun Makeup</option>
+    <option value="Nikkah Makeup">Nikkah Makeup</option>
+    <option value="Engagement Makeup">Engagement Makeup</option>
+    <option value="Party Makeup">Party Makeup</option>
+    <option value="Hair Styling">Hair Styling</option>
+    <option value="Hair Cutting">Hair Cutting</option>
+    <option value="Hair Coloring">Hair Coloring</option>
+    <option value="Facial & Skin Care">Facial & Skin Care</option>
+    <option value="Mehndi Design">Mehndi Design</option>
+    <option value="Manicure Pedicure">Manicure Pedicure</option>
+</select>
+<br><br><br>
+<textarea name="service" id="" placeholder="Additional Details (optional)" class="form-control"></textarea>
         <br>
         <button type="submit" class="btn-grad mx-auto">BOOK NOW</button>
         <br>
     </form>
     </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dateInput = document.getElementById('appointment_date');
+    const timeInput = document.querySelector('input[name="time"]');
+    
+    function setMinTime() {
+        if (!dateInput.value) return;
+        
+        const selectedDate = new Date(dateInput.value);
+        const today = new Date();
+        today.setHours(0,0,0,0);
+        
+        if (selectedDate.getTime() === today.getTime()) {
+            let now = new Date();
+            let hours = String(now.getHours()).padStart(2, '0');
+            let minutes = String(now.getMinutes()).padStart(2, '0');
+            timeInput.min = hours + ':' + minutes;
+        } else {
+            timeInput.removeAttribute('min');
+        }
+    }
+
+    // Page load pe bhi check karo
+    setMinTime();
+    // Date change pe bhi check karo
+    dateInput.addEventListener('change', setMinTime);
+    
+    // Form submit pe final check - agar purana time hua to rok do
+    document.querySelector('form').addEventListener('submit', function(e) {
+        if (timeInput.min && timeInput.value < timeInput.min) {
+            e.preventDefault();
+            alert('Please select a future time. Past time is not allowed for today.');
+            timeInput.value = '';
+        }
+    });
+});
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

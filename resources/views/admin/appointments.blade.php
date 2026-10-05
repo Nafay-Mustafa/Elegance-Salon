@@ -21,7 +21,8 @@
                     <th>Phone</th>
                     <th>Date</th>
                     <th>Time</th>
-                    <th>Service</th>
+                    <th>Additional Details</th>
+                    <th>Status / Service</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -35,6 +36,7 @@
                     <td>{{ $row->date }}</td>
                     <td>{{ $row->time }}</td>
                     <td>{{ $row->service }}</td>
+                    <td>{{ $row->status }}</td>
 <td>
     <form action="{{ route('admin.appointments.delete', $row->id) }}" method="POST" onsubmit="return confirm('Delete karna hai?')">
         @csrf
