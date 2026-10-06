@@ -22,7 +22,7 @@
                     <th>Date</th>
                     <th>Time</th>
                     <th>Additional Details</th>
-                    <th>Status / Service</th>
+                    <th>Service</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -38,7 +38,7 @@
                     <td>{{ $row->service }}</td>
                     <td>{{ $row->status }}</td>
 <td>
-    <form action="{{ route('admin.appointments.delete', $row->id) }}" method="POST" onsubmit="return confirm('Delete karna hai?')">
+    <form action="{{ route('admin.appointments.delete', $row->id) }}" method="POST" onsubmit="return confirm('Are you sure')">
         @csrf
         @method('DELETE')
         <button type="submit" class="btn btn-danger btn-sm">Delete</button>

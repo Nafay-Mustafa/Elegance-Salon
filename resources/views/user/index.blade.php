@@ -1073,7 +1073,7 @@
   <!-- end about section -->
 
   <!-- review section -->
-  <section class="book_section layout_padding">
+  <section class="book_section layout_padding" id="feedback">
     <div class="container">
       <div class="heading_container">
         <h2 style="margin-top:20px; ,margin-bottom:20px;">
@@ -1083,6 +1083,11 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
+            @if(session('feedback_success'))
+    <div class="alert alert-success" style="background: #d1e7dd; color: #0f5132; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align:center;">
+        {{ session('feedback_success') }}
+    </div>
+@endif
             <form action="{{ route('feedback.store') }}" method="POST">
     @csrf
     <div>
