@@ -45,7 +45,7 @@
 
   <div class="hero_area">
     <div class="bg-box ">
- <img src="images/final banner picture.png" alt="" data-aos="fade-up" data-aos-duration="1500">    
+ <img src="images/new banner image.png" alt="" data-aos="fade-up" data-aos-duration="1500">    
 </div>
     <!-- end header section -->
     <!-- slider section -->

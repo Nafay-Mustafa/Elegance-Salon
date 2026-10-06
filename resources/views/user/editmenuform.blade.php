@@ -17,6 +17,7 @@
 
     <body>
 <div class="container">
+    <h1>UPDATE MENU</h1>
     <br>
    <form action="/updatemenu/{{ $menu->id }}" method="post" enctype="multipart/form-data">
     @csrf
@@ -32,9 +33,15 @@
     <button type="submit" class="btn btn-primary p-2 m-2 form-control">
         Update
     </button>
+    
     <br>
 </form>
 <br>
+<form action="/deletemenu/{{$menu->id}}" method="post">
+    @csrf
+    
+    <button type="submit" class="form-control btn btn-danger">Delete</button>
+</form>
 
 </div>
         <script

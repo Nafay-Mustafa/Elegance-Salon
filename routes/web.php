@@ -75,7 +75,7 @@ Route::get('/menu', [usercontroller::class, 'showmenu'])->name('showmenu');
 Route::get('/menutable' , [admincontroller::class, 'showmenutable']);
 Route::get('/editmenu/{id}', [admincontroller::class, 'editmenu']);
 Route::post('/updatemenu/{id}', [admincontroller::class, 'editmenulogic']);
-
+Route::post('/deletemenu/{id}', [admincontroller::class, 'deletemenulogic']);
 Route::post('/employeeform' , [admincontroller::class, 'addemployee']);
 
 Route::get('/employeepanel' , [admincontroller::class, 'showemployee']);

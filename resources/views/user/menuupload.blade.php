@@ -17,6 +17,7 @@
 
     <body>
 <div class="container">
+    <h1>UPLOAD MENU</h1>
     <br>
     <form action="/menuupload" method="post" enctype="multipart/form-data">
     @csrf

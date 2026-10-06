@@ -35,22 +35,15 @@ public function editmenulogic(Request $req, $id)
     if (!$menu) {
         return redirect()->back()->with('error', 'Menu not found');
     }
-
     $menu->heading = $req->heading;
     $menu->description = $req->description;
     $menu->price = $req->price;
-
     if ($req->hasFile('image')) {
-
         $file = $req->file('image');
-
         $fileName = time() . '_' . $file->getClientOriginalName();
-
         $file->move(public_path('upload'), $fileName);
-
         $menu->image = $fileName;
     }
-
     $menu->save();
 
     return redirect('menutable')->with('success', 'Menu updated successfully');
@@ -60,7 +53,11 @@ public function editmenu($id)
     $menu = Menu::find($id);
     return view('user.editmenuform', compact('menu'));
 }
-
+public function deletemenulogic($id){
+    $menu= Menu::find($id);
+    $menu->delete();
+    return redirect('menutable');
+}
 // employee functions 
    public function addemployee(Request $req){
       $employee= new Employee();
