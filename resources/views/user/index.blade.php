@@ -8,6 +8,40 @@
       margin-top: 10px;
     }
 </style>
+<style>
+  @media (max-width: 768px) {
+    .bg-box img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+@media (max-width: 768px) {
+
+    .instagram-button,
+    .whatsapp-button,
+    .back-to-top {
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .instagram-button {
+        bottom: 135px;
+        font-size: 19px;
+    }
+
+    .whatsapp-button {
+        bottom: 80px;
+        font-size: 20px;
+    }
+
+    .back-to-top {
+        bottom: 25px;
+        font-size: 16px;
+    }
+}
+</style>
 
   <div class="hero_area">
     <div class="bg-box ">

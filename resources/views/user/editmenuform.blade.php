@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
     <head>
-        <title>Upload Menu</title>
+        <title>Edit Menu</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,18 +18,24 @@
     <body>
 <div class="container">
     <br>
-    <form action="/menuupload" method="post" enctype="multipart/form-data">
+   <form action="/updatemenu/{{ $menu->id }}" method="post" enctype="multipart/form-data">
     @csrf
-    <input  type="file"  name="image" id="" class="p-2 m-2"> 
-    <br>
-    <input type="text" name="heading" id="" placeholder="Heading" class="form-control " >
-    <br>
-    <textarea  name="description" placeholder="Description" class="form-control"></textarea>
-    <br>
-    <input type="number" name="price" id="" placeholder="Price" class="form-control">
 <br>
-    <button name="submit" type="submit"  class="btn btn-dark form-control" >Upload Menu</button>
+    <input type="text" name="heading" value="{{ $menu->heading }}"  class="form-control">  
+<br>
+    <textarea name="description"  class="form-control">{{ $menu->description }}</textarea>
+<br>
+    <input type="number" name="price" value="{{ $menu->price }}" class="form-control">
+<br>
+    <input type="file" name="image"  class="p-2 m-2">
+<br>
+    <button type="submit" class="btn btn-primary p-2 m-2 form-control">
+        Update
+    </button>
+    <br>
 </form>
+<br>
+
 </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

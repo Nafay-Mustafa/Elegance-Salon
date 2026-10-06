@@ -43,24 +43,30 @@
 
 <body>
     <div class="container">
-         <h1 class="text-center w-100 m-2 p-2 text-dark">Employees</h1>
-  <table class="table table-stiped table-dark p-2 m-2">
+         <h1 class="text-center w-100 m-2 p-2 text-dark">Menu Table</h1>
+  <table class="table table-striped table-dark p-2 m-2">
     <thead>
         <tr>
-             <th>Name</th>
-              <th>Email</th>
-               <th>Contact Number</th>
-               <th>Department</th>
-                 <th>Delete</th>
+             <th>Image</th>
+              <th>Heading</th>
+               <th>Description</th>
+               <th>Price</th>
+               <th>Action</th>
+                 
         </tr>
       </thead>
      <tbody>
-         @foreach($allemployee as $employee)
+         @foreach($allmenu as $menu)
          <tr>
-                    <td>{{ $employee->name }}</td>
-                    <td>{{ $employee->email }}</td>
-                    <td>{{ $employee->number }}</td>
-                    <td>{{ $employee->department }}</td>
+                    <td><img style="width:100px; object-fit:cover; height:100px;" src="{{asset('upload/' . $menu->image)}}" alt="menu image"></td>
+                    <td>{{ $menu->heading }}</td>
+                    <td>{{ $menu->description }}</td>
+                    <td>{{ $menu->price }}</td>
+                    <td>
+                       <a href="/editmenu/{{ $menu->id }}" class="btn btn-primary">
+    Edit
+</a>
+                    </td>
             
 </tr>
 @endforeach

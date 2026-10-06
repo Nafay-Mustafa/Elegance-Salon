@@ -67,15 +67,19 @@ Route::get('/menuupload', function () {
 Route::get('/employeepanel', function () {
     return view('user.employeepanel');
 });
-
+// menu upload routes
 Route::post('/menuupload' , [admincontroller::class, 'addMenu']);
 
 Route::get('/menu', [usercontroller::class, 'showmenu'])->name('showmenu');
 
+Route::get('/menutable' , [admincontroller::class, 'showmenutable']);
+Route::get('/editmenu/{id}', [admincontroller::class, 'editmenu']);
+Route::post('/updatemenu/{id}', [admincontroller::class, 'editmenulogic']);
+
 Route::post('/employeeform' , [admincontroller::class, 'addemployee']);
 
 Route::get('/employeepanel' , [admincontroller::class, 'showemployee']);
-Route::post('/deleteemployee/{id}' , [admincontroller::class, 'deleteemployee']);
 Route::get('/contact', function () {
     return view('user.contact');
 });
+

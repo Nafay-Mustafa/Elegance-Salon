@@ -42,12 +42,94 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet">
+      
        <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
   <style>
+    /* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #970909;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #5c0606;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    right: 25px;
+    bottom: 85px;
+    width: 45px;
+    height: 45px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-decoration: none;
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    /* background-color: #128C7E; */
+    box-shadow:0 0 15px #25D366;
+    color: white;
+    transform: translateY(-3px);
+}
+.instagram-button {
+    position: fixed;
+    right: 25px;
+    bottom: 145px;
+    width: 45px;
+    height: 45px;
+    /* background-color: #E4405F; */
+    background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-decoration: none;
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.instagram-button:hover {
+    /* background-color: #C13584; */
+    box-shadow:0 0 15px #ee2a7b, 0 0 30px #6228d7;
+    color: white;
+    transform: translateY(-3px);
+}
     .my-video {
       width: 100%;
       height: 450px;
@@ -128,6 +210,38 @@ h2{
 .user-dropdown button:hover {
     background: #f2f2f2;
 }
+.navbar-toggler {
+    border: 1px solid #970909;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23970909' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+    background-color: #970909;
+    border: 1px solid #970909;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    position: relative;
+    width: 25px;
+    height: 18px;
+    display: inline-block;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 25px;
+    border-top: 2px solid #ffffff;
+}
 </style>
 </head>
 
@@ -145,10 +259,16 @@ h2{
           <img class="logo" src="images/bg-remove.png" alt="">
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> </span>
-        </button>
+       <button class="navbar-toggler" type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+
+</button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav  mx-auto ">
@@ -294,7 +414,7 @@ h2{
            <div class="contact_link_box">
   <a href="https://www.google.com/maps/search/?api=1&query=Elegance+Salon+Kunri" target="_blank">
     <i class="fa fa-map-marker" aria-hidden="true"></i>
-    <span>Location</span>
+    <span>Shop No. 123, ABC Road, Karachi, Pakistan</span>
   </a>
   <a href="https://wa.me/923072487922" target="_blank">
     <i class="fa fa-phone" aria-hidden="true"></i>
@@ -309,7 +429,9 @@ h2{
         </div>
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
-            <a href="" class="footer-logo">
+           
+
+            <a href="/index" class="footer-logo">
               Elegance Salon
             </a>
             <p>
@@ -359,6 +481,17 @@ h2{
       </div>
     </div>
   </footer>
+  <!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="fa fa-arrow-up"></i>
+</a>
+<!-- WhatsApp -->
+<a href="https://www.whatsapp.com/" class="whatsapp-button">
+    <i class="fa fa-whatsapp"></i>
+</a>
+<a href="https://www.instagram.com/" class="instagram-button">
+    <i class="fa fa-instagram"></i>
+</a>
   <!-- footer section -->
 
   <!-- jQery -->
@@ -429,6 +562,28 @@ $(document).ready(function () {
             dropdown.style.display = 'block';
         }
     });
+</script>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    });
+
+    backToTop.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
 </script>
 </body>
 
