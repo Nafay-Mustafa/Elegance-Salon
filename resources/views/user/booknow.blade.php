@@ -95,22 +95,111 @@
         <br>
         <input type="time" name="time" id="" class="form-control" required>
         <br>
-        <select name="status" class="form-control" required>
-    <option value="" disabled selected>Select Service / Status</option>
-    <option value="Bridal Makeup">Bridal Makeup</option>
-    <option value="Valima Makeup">Valima Makeup</option>
-    <option value="Mehndi / Mayoun Makeup">Mehndi / Mayoun Makeup</option>
-    <option value="Nikkah Makeup">Nikkah Makeup</option>
-    <option value="Engagement Makeup">Engagement Makeup</option>
-    <option value="Party Makeup">Party Makeup</option>
-    <option value="Hair Styling">Hair Styling</option>
-    <option value="Hair Cutting">Hair Cutting</option>
-    <option value="Hair Coloring">Hair Coloring</option>
-    <option value="Facial & Skin Care">Facial & Skin Care</option>
-    <option value="Mehndi Design">Mehndi Design</option>
-    <option value="Manicure Pedicure">Manicure Pedicure</option>
-</select>
-<br><br><br>
+        <!-- Custom Scrollable Dropdown -->
+<div class="custom-select-wrapper" style="position:relative; width:100%;">
+    <input type="hidden" name="status" id="statusHidden">
+    <div id="customSelectBox" style="border:1px solid #ccc; padding:12px; border-radius:6px; background:#fff; cursor:pointer;">
+        Select Service / Status
+    </div>
+    <div id="customOptions" style="display:none; position:absolute; top:100%; left:0; right:0; background:#fff; border:1px solid #ccc; border-radius:6px; max-height:150px; overflow-y:auto; z-index:9999; margin-top:5px; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
+        <div class="opt" data-value="Basic Facial 1000/-" style="padding:10px 12px; cursor:pointer;">Basic Facial 1000/-</div>
+        <div class="opt" data-value="Herbal Facial 1000/-" style="padding:10px 12px; cursor:pointer;">Herbal Facial 1000/-</div>
+        <div class="opt" data-value="Acne Facial 2000/-" style="padding:10px 12px; cursor:pointer;">Acne Facial 2000/-</div>
+        <div class="opt" data-value="Age Regulate Facial 2000/-" style="padding:10px 12px; cursor:pointer;">Age Regulate Facial 2000/-</div>
+        <div class="opt" data-value="Double Glow Facial 2500/-" style="padding:10px 12px; cursor:pointer;">Double Glow Facial 2500/-</div>
+        <div class="opt" data-value="Face Polish Facial 3000/-" style="padding:10px 12px; cursor:pointer;">Face Polish Facial 3000/-</div>
+        <div class="opt" data-value="Whitening Glow Facial 2500/-" style="padding:10px 12px; cursor:pointer;">Whitening Glow Facial 2500/-</div>
+        <div class="opt" data-value="Continental Cleansing 2500/-" style="padding:10px 12px; cursor:pointer;">Continental Cleansing 2500/-</div>
+        <div class="opt" data-value="Purity Cleansing 3000/-" style="padding:10px 12px; cursor:pointer;">Purity Cleansing 3000/-</div>
+        <div class="opt" data-value="Gold / Hydrating Treatment 3000/-" style="padding:10px 12px; cursor:pointer;">Gold / Hydrating Treatment 3000/-</div>
+        <div class="opt" data-value="Brightening Oxygen Oz2 Treatment 4000/-" style="padding:10px 12px; cursor:pointer;">Brightening Oxygen Oz2 Treatment 4000/-</div>
+        <div class="opt" data-value="Radiant Whitening Glow Treatment 5000/-" style="padding:10px 12px; cursor:pointer;">Radiant Whitening Glow Treatment 5000/-</div>
+        <div class="opt" data-value="Sebum Control Treatment 5000/-" style="padding:10px 12px; cursor:pointer;">Sebum Control Treatment 5000/-</div>
+        <div class="opt" data-value="Rejuvenating Treatment 5000/-" style="padding:10px 12px; cursor:pointer;">Rejuvenating Treatment 5000/-</div>
+        <div class="opt" data-value="Luxury Instant Glow Treatment 5500/-" style="padding:10px 12px; cursor:pointer;">Luxury Instant Glow Treatment 5500/-</div>
+        <div class="opt" data-value="Biological Treatment 6000/-" style="padding:10px 12px; cursor:pointer;">Biological Treatment 6000/-</div>
+        <div class="opt" data-value="Hydra sebum Control Treatment 6000/-" style="padding:10px 12px; cursor:pointer;">Hydra sebum Control Treatment 6000/-</div>
+        <div class="opt" data-value="Hydra Radiant Whitening Glow Treatment 6000/-" style="padding:10px 12px; cursor:pointer;">Hydra Radiant Whitening Glow Treatment 6000/-</div>
+        <div class="opt" data-value="Hydra Rejuvenating Treatment 6000/-" style="padding:10px 12px; cursor:pointer;">Hydra Rejuvenating Treatment 6000/-</div>
+        <div class="opt" data-value="Renewal Hydradermie Treatment 7000/-" style="padding:10px 12px; cursor:pointer;">Renewal Hydradermie Treatment 7000/-</div>
+        <div class="opt" data-value="Renewal Hydradermie Lifting Treatment 8000/-" style="padding:10px 12px; cursor:pointer;">Renewal Hydradermie Lifting Treatment 8000/-</div>
+        <div class="opt" data-value="Double Glow Facial + Whitening Bleach Rs. 3500/-" style="padding:10px 12px; cursor:pointer;">Double Glow Facial + Whitening Bleach Rs. 3500/-</div>
+        <div class="opt" data-value="Brightening Oxygen Oz2 Facial + Whitening Bleach Rs. 5000/-" style="padding:10px 12px; cursor:pointer;">Brightening Oxygen Oz2 Facial + Whitening Bleach Rs. 5000/-</div>
+        <div class="opt" data-value="Luxury Instant Glow Treatment + Sandle Bleach Rs. 6500/-" style="padding:10px 12px; cursor:pointer;">Luxury Instant Glow Treatment + Sandle Bleach Rs. 6500/-</div>
+        <div class="opt" data-value="Renewal Hydradermie Treatment + Sandle Bleach Rs. 8000/-" style="padding:10px 12px; cursor:pointer;">Renewal Hydradermie Treatment + Sandle Bleach Rs. 8000/-</div>
+        <div class="opt" data-value="Renewal Hydradermie Lift Treatment + Sandle Bleach Rs. 9000/-" style="padding:10px 12px; cursor:pointer;">Renewal Hydradermie Lift Treatment + Sandle Bleach Rs. 9000/-</div>
+        <div class="opt" data-value="Casual Manicure + Casual Pedicure + Hand & Feet Bleach with Mask Rs. 3600/-" style="padding:10px 12px; cursor:pointer;">Casual Manicure + Casual Pedicure + Hand & Feet Bleach with Mask Rs. 3600/-</div>
+        <div class="opt" data-value="Exclusive Manicure + Exclusive Pedicure + Hand & Feet Bleach with Mask Rs. 4600/-" style="padding:10px 12px; cursor:pointer;">Exclusive Manicure + Exclusive Pedicure + Hand & Feet Bleach with Mask Rs. 4600/-</div>
+        <div class="opt" data-value="Luxury Manicure + Luxury Pedicure + Hand & Feet Bleach with Mask Rs. 6100/-" style="padding:10px 12px; cursor:pointer;">Luxury Manicure + Luxury Pedicure + Hand & Feet Bleach with Mask Rs. 6100/-</div>
+        <div class="opt" data-value="Casual Full Arms + Full Legs Waxing Rs. 1800/-" style="padding:10px 12px; cursor:pointer;">Casual Full Arms + Full Legs Waxing Rs. 1800/-</div>
+        <div class="opt" data-value="Rica Full Arms + Full legs WaxingRs. 2950/-" style="padding:10px 12px; cursor:pointer;">Rica Full Arms + Full legs WaxingRs. 2950/-</div>
+        <div class="opt" data-value="Glamour Eye Makeup 4000/-" style="padding:10px 12px; cursor:pointer;">Glamour Eye Makeup 4000/-</div>
+        <div class="opt" data-value="Soft Party Makeup 5000/-" style="padding:10px 12px; cursor:pointer;">Soft Party Makeup 5000/-</div>
+        <div class="opt" data-value="Glamour Party Makeup 10000/-" style="padding:10px 12px; cursor:pointer;">Glamour Party Makeup 10000/-</div>
+        <div class="opt" data-value="Smokey Makeup 12000/-" style="padding:10px 12px; cursor:pointer;">Smokey Makeup 12000/-</div>
+        <div class="opt" data-value="Thread Casual Rica Upper Lip 100/-" style="padding:10px 12px; cursor:pointer;">Thread Casual Rica Upper Lip 100/-</div>
+        <div class="opt" data-value="Lower Lip 100/-" style="padding:10px 12px; cursor:pointer;">Lower Lip 100/-</div>
+        <div class="opt" data-value="Chin 100/-" style="padding:10px 12px; cursor:pointer;">Chin 100/-</div>
+        <div class="opt" data-value="Cheeks 150/-" style="padding:10px 12px; cursor:pointer;">Cheeks 150/-</div>
+        <div class="opt" data-value="Forehead 150/-" style="padding:10px 12px; cursor:pointer;">Forehead 150/-</div>
+        <div class="opt" data-value="Nose Wax 200/-" style="padding:10px 12px; cursor:pointer;">Nose Wax 200/-</div>
+        <div class="opt" data-value="Full Face 1000/-" style="padding:10px 12px; cursor:pointer;">Full Face 1000/-</div>
+        <div class="opt" data-value="Mehndi (per side) 500/-" style="padding:10px 12px; cursor:pointer;">Mehndi (per side) 500/-</div>
+        <div class="opt" data-value="Uroosa Mehndi (per side) 800/-" style="padding:10px 12px; cursor:pointer;">Uroosa Mehndi (per side) 800/-</div>
+        <div class="opt" data-value="Feet Mehndi 1000/-" style="padding:10px 12px; cursor:pointer;">Feet Mehndi 1000/-</div>
+        <div class="opt" data-value="Engagement Mehndi 4000/-" style="padding:10px 12px; cursor:pointer;">Engagement Mehndi 4000/-</div>
+        <div class="opt" data-value="on words Bridal Mehndi 5000/-" style="padding:10px 12px; cursor:pointer;">on words Bridal Mehndi 5000/-</div>
+        <div class="opt" data-value="Straight Hair Cut 800/-" style="padding:10px 12px; cursor:pointer;">Straight Hair Cut 800/-</div>
+        <div class="opt" data-value="Front Bangs 800/-" style="padding:10px 12px; cursor:pointer;">Front Bangs 800/-</div>
+        <div class="opt" data-value="Curtain Bangs 1000/-" style="padding:10px 12px; cursor:pointer;">Curtain Bangs 1000/-</div>
+        <div class="opt" data-value="U Shaped Hair Cut 1000/-" style="padding:10px 12px; cursor:pointer;">U Shaped Hair Cut 1000/-</div>
+        <div class="opt" data-value="Front Layer Cut 1000/-" style="padding:10px 12px; cursor:pointer;">Front Layer Cut 1000/-</div>
+        <div class="opt" data-value="Split End 1500/-" style="padding:10px 12px; cursor:pointer;">Split End 1500/-</div>
+        <div class="opt" data-value="Bob Hair Cut 2000/-" style="padding:10px 12px; cursor:pointer;">Bob Hair Cut 2000/-</div>
+        <div class="opt" data-value="Step Cut 2000/-" style="padding:10px 12px; cursor:pointer;">Step Cut 2000/-</div>
+        <div class="opt" data-value="Layers 2000/-" style="padding:10px 12px; cursor:pointer;">Layers 2000/-</div>
+    </div>
+    <small id="statusError" style="color:red; display:none; margin-top:5px;">Please select a service first!</small>
+</div>
+
+<script>
+const box = document.getElementById('customSelectBox');
+const opts = document.getElementById('customOptions');
+const hidden = document.getElementById('statusHidden');
+box.addEventListener('click', ()=> opts.style.display = opts.style.display==='block' ? 'none' : 'block');
+opts.querySelectorAll('.opt').forEach(o=>{
+    o.addEventListener('click', ()=>{
+        box.textContent = o.dataset.value;
+        hidden.value = o.dataset.value;
+        opts.style.display='none';
+    });
+    o.addEventListener('mouseenter', ()=> o.style.background='#f0f0f0');
+    o.addEventListener('mouseleave', ()=> o.style.background='#fff');
+});
+document.addEventListener('click', (e)=>{
+    if(!e.target.closest('.custom-select-wrapper')) opts.style.display='none';
+});
+// Form validation for custom dropdown
+const bookingForm = document.querySelector('form[action*="book"]') || document.querySelector('form');
+bookingForm.addEventListener('submit', function(e){
+    const hidden = document.getElementById('statusHidden');
+    const box = document.getElementById('customSelectBox');
+    const error = document.getElementById('statusError');
+    
+    if(!hidden.value){
+        e.preventDefault();
+        box.style.border = "1px solid red";
+        error.style.display = "block";
+        box.scrollIntoView({behavior:'smooth', block:'center'});
+        return false;
+    } else {
+        box.style.border = "1px solid #ccc";
+        error.style.display = "none";
+    }
+});
+</script>
+
+<br>
 <textarea name="service" id="" placeholder="Additional Details (optional)" class="form-control"></textarea>
         <br>
         <button type="submit" class="btn-grad mx-auto">BOOK NOW</button>

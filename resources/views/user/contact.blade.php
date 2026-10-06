@@ -485,6 +485,14 @@ h2{
         <form action="{{ route('contact.store') }}" method="POST">
 @csrf
 
+@if(session('success'))
+    <div class="alert alert-success text-center" style="background:#d1e7dd; color:#0f5132; padding:12px; border-radius:8px; margin-bottom:15px;">
+        {{ session('success') }}
+    </div>
+@endif
+
+<div class="form-group">
+
 <div class="form-group">
     <label>Full Name</label>
     <input type="text" name="name" id="full_name" placeholder="Enter your name" required>
@@ -502,7 +510,7 @@ h2{
 
 <div class="form-group">
     <label>Message</label>
-    <textarea name="message" id="message" placeholder="Tell us about your requirements..."></textarea>
+    <textarea name="message" id="message" placeholder="Tell us about your requirements..." required></textarea>
 </div>
 
 <button type="submit" class="submit-btn">Send Message</button>

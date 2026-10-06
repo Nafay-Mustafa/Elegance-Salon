@@ -15,7 +15,7 @@ class FeedbackController extends Controller
 
         Feedback::create($request->only('name','phone','email','message'));
 
-        return back()->with('success', 'Feedback sent!');
+        return redirect()->to(url()->previous() . '#feedback')->with('feedback_success', 'Thanks for your feedback! We really appreciate it.');
     }
 
     public function index(){

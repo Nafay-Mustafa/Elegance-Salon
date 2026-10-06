@@ -69,7 +69,7 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<p>Basic Facial 1000/</p>      
+<p>Basic Facial 1000/-</p>      
 <p>Herbal Facial 1000/-</p> 
 <p>Acne Facial 2000/- </p> 
 <p>Age Regulate Facial 2000/- </p> 
@@ -127,11 +127,11 @@ LUXURY FACE TREATMENT
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<p>Double Glow Facial + Whitening Bleach Rs. 3500/- Rs. 2500/- </p> 
-<p>Brightening Oxygen Oz2 Facial + Whitening Bleach Rs. 5000/- Rs. 3500/-  </p>     
-<p>Luxury Instant Glow Treatment + Sandle Bleach Rs. 6500/- Rs. 4500/- </p>     
-<p>Renewal Hydradermie Treatment + Sandle Bleach Rs. 8000/- Rs. 5500/-</p> 
-<p>Renewal Hydradermie Lift Treatment + Sandle Bleach Rs. 9000/- Rs. 6500/-</p>    
+<p>Double Glow Facial + Whitening Bleach Rs. 3500/-</p> 
+<p>Brightening Oxygen Oz2 Facial + Whitening Bleach Rs. 5000/-</p>     
+<p>Luxury Instant Glow Treatment + Sandle Bleach Rs. 6500/-</p>     
+<p>Renewal Hydradermie Treatment + Sandle Bleach Rs. 8000/-</p> 
+<p>Renewal Hydradermie Lift Treatment + Sandle Bleach Rs. 9000/-</p>    
 
  </div>
     </div>
@@ -144,9 +144,9 @@ LUXURY FACE TREATMENT
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<p>Casual Manicure + Casual Pedicure + Hand & Feet Bleach with Mask Rs. 3600/- Rs. 2500/-</p>
-<p>Exclusive Manicure + Exclusive Pedicure + Hand & Feet Bleach with Mask Rs. 4600/- Rs. 3000/-</p>  
-<p>Luxury Manicure + Luxury Pedicure + Hand & Feet Bleach with Mask Rs. 6100/- Rs. 4000/-</p>    
+<p>Casual Manicure + Casual Pedicure + Hand & Feet Bleach with Mask Rs. 3600/-</p>
+<p>Exclusive Manicure + Exclusive Pedicure + Hand & Feet Bleach with Mask Rs. 4600/-</p>  
+<p>Luxury Manicure + Luxury Pedicure + Hand & Feet Bleach with Mask Rs. 6100/-</p>    
   
 
   </div>
@@ -160,8 +160,8 @@ LUXURY FACE TREATMENT
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<p>Casual Full Arms + Full Legs Waxing Rs. 1800/- Rs. 1300/</p>    
-<p>Rica Full Arms + Full legs WaxingRs. 2950/- Rs. 2200/-</p>    
+<p>Casual Full Arms + Full Legs Waxing Rs. 1800/-</p>    
+<p>Rica Full Arms + Full legs WaxingRs. 2950/-</p>    
 
        </div>
     </div>
@@ -193,13 +193,13 @@ LUXURY FACE TREATMENT
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<p>Thread Casual Rica Upper Lip 100/- 150/-</p>   
-<p>Lower Lip 100/- 150/- </p> 
-<p>Chin 100/- 200/- </p>   
-<p>Cheeks 150/- 300/- </p>   
-<p>Forehead 150/- 250/- </p>   
-<p>Nose Wax 200/- </p>
-<p>Full Face 1000/- 2200/-  </p>    
+<p>Thread Casual Rica Upper Lip 100/-</p>   
+<p>Lower Lip 100/-</p> 
+<p>Chin 100/-</p>   
+<p>Cheeks 150/-</p>   
+<p>Forehead 150/-</p>   
+<p>Nose Wax 200/-</p>
+<p>Full Face 1000/-</p>    
 
       </div>
     </div>
@@ -213,16 +213,16 @@ LUXURY FACE TREATMENT
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
 <P>Mehndi (per side)
-500/-
-Uroosa Mehndi (per side)
-800/-
-Feet Mehndi
+500/-</p>
+<P>Uroosa Mehndi (per side)
+800/-</p>
+<P>Feet Mehndi
 1000/-</P> 
 <P>Engagement Mehndi
-4000/- on words
+4000/-</p>
+<P>on words
 Bridal Mehndi
-5000/- on words
-Hair colour</P> 
+5000/-</p> 
     </div>
     </div>
   </div>
@@ -238,21 +238,21 @@ Hair colour</P>
       <div class="accordion-body">
       <P>Straight Hair Cut
 800/-
-Front Bangs
-800/-
-Curtain Bangs
-1000/-
-U Shaped Hair Cut
-1000/-
-Front Layer Cut
-1000/-
-Split End
-1500/-
-Bob Hair Cut
-2000/-
-Step Cut
-2000/-
-Layers
+<P>Front Bangs
+800/-</p>
+<P>Curtain Bangs
+1000/-</p>
+<P>U Shaped Hair Cut
+1000/-</p>
+<P>Front Layer Cut
+1000/-</p>
+<P>Split End
+1500/-</p>
+<P>Bob Hair Cut
+2000/-</p>
+<P>Step Cut
+2000/-</p>
+<P>Layers
 2000/- </P>
     </div>
     </div>
