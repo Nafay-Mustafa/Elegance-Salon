@@ -138,6 +138,7 @@ h1 {
   display: block;
   outline: none;
   border: none;
+  text-decoration: none;
 }
 
 .btn-grad:hover {

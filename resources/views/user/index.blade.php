@@ -289,6 +289,8 @@
     </div>
   </section>
 
+  <br><br><br>
+
   <!-- end offer section -->
 <!-- slider img section -->
      <div class="wrapper"  >
@@ -321,6 +323,8 @@
     </div>
 </div>
 <!-- slider img section end  here -->
+
+<br><br><br>
 
   <!-- catagory section -->
 
@@ -1072,11 +1076,14 @@
     </div>
   </section>
 
+  <br><br><br>
+
   <!-- end catagory section -->
 
   <!-- about section -->
 
   <section class="about_section layout_padding">
+    <br><br>
     <div class="container  ">
 
       <div class="row">
@@ -1102,9 +1109,12 @@
         </div>
       </div>
     </div>
+    <br><br>
   </section>
 
   <!-- end about section -->
+
+  <br><br><br>
 
   <!-- review section -->
   <section class="book_section layout_padding" id="feedback">
@@ -1137,7 +1147,7 @@
     <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
 </div>
     <div class="btn_box">
-        <button type="submit" style=margin:20px;>
+        <button type="submit" style=margin:5px;>
             Send
         </button>
     </div>
@@ -1145,16 +1155,16 @@
             </form>
           </div>
         </div>
-         <!-- <div class="col-md-6"> -->
-          <!-- <div class="map_container "> -->
-            <!-- <div id="googleMap"></div> -->
-             <!-- <img src="images/logo with background.png" alt=""> -->
-          </div>
-        </div>
-      </div>
+        <div class="col-md-6">
+    <div class="map_container " style="display:flex; align-items:center; justify-content:center; height: 65%;">
+        <img src="{{ asset('images/bg_remove_logo_2.png') }}" alt="Elegance Logo" style="width:80%; max-width:500px; object-fit:contain; border-radius:15px;">
+    </div>
+</div>
     </div>
   </section>
   <!-- end review section -->
+
+  <br><br><br>
 
   <!-- client section -->
 
