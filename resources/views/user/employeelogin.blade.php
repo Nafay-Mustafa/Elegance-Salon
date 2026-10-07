@@ -67,52 +67,19 @@
         }
     </style>
 </head>
-
-
 <body>
    <div class="container">
         <img class="logo" src="images/logo with background.png" alt="">
         
-        <form action="/employeeform" method="post">
+        <form action="/employeelogin" method="post">
             @csrf
-            <h2 class="heading_container heading_center">Create Account</h2>
-            <br>
-            <input type="text" name="name" id="" placeholder="Enter Name" class="form-control">
+            <h2 class="heading_container heading_center">Log In</h2>
             <br>
             <input type="email" name="email" id="" placeholder="Enter Email" class="form-control">
             <br>
             <input type="password" name="password" id="" placeholder="Enter Password" class="form-control">
             <br>
-            <input type="number" name="number" id="" placeholder="Enter Contact Number" class="form-control">
-            <br>
-            <select name="department" id="" class="form-control">
-                <option value="Hair Stylist">
-                    Hair Stylist
-                </option>
-                <option value="Makeup Artist">
-                    Makeup Artist
-                </option>
-                <option value="Manager">
-                    Manager
-                </option>
-                <option value="Receptionist">
-                    Receptionist
-                </option>
-                <option value="Assistant">
-                    Assistant
-                </option>
-                <option value="Beautician">
-                    Beautician
-                </option>
-                <option value="Nail Technician">
-                    Nail Technician
-                </option>
-                <option value="Hair Colorist">
-                    Hair Colorist
-                </option>
-            </select>
-            <br>
-            <button type="submit" name="submit" class="btn-grad ms-auto">Register</button>
+            <button type="submit" name="submit" class="btn-grad ms-auto">Log In</button>
             <a href="/employeelogin" style="text-decoration:none !important;">If already regiser please Log In</a>
         </form>
     </div>

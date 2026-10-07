@@ -67,6 +67,9 @@ Route::get('/menuupload', function () {
 Route::get('/employeepanel', function () {
     return view('user.employeepanel');
 });
+Route::get('/contact', function () {
+    return view('user.contact');
+});
 // menu upload routes
 Route::post('/menuupload' , [admincontroller::class, 'addMenu']);
 
@@ -76,10 +79,15 @@ Route::get('/menutable' , [admincontroller::class, 'showmenutable']);
 Route::get('/editmenu/{id}', [admincontroller::class, 'editmenu']);
 Route::post('/updatemenu/{id}', [admincontroller::class, 'editmenulogic']);
 Route::post('/deletemenu/{id}', [admincontroller::class, 'deletemenulogic']);
+// Employee Routes
 Route::post('/employeeform' , [admincontroller::class, 'addemployee']);
-
 Route::get('/employeepanel' , [admincontroller::class, 'showemployee']);
-Route::get('/contact', function () {
-    return view('user.contact');
+Route::post('/updateemployee/{id}', [admincontroller::class, 'updateemployee']);
+Route::post('/editemployee/{id}', [admincontroller::class, 'editemployeelogic']);
+Route::get('/staffportal/{id}', [admincontroller::class, 'staffportal']);
+Route::post('/employeelogin', [admincontroller::class, 'employeelogin']);    
+Route::get('/employeelogin', function () {
+    return view('user.employeelogin');
 });
-
+Route::get('/staff/appointments', [AppointmentController::class, 'index'])
+    ->name('staff.appointments');

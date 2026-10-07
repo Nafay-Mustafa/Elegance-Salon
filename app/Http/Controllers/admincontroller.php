@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\RegisterUser;
-use App\Models\Product;
 use App\Models\Menu;
 use App\Models\Employee;
+use App\Models\Appointment;
 class admincontroller extends Controller
 {
     // MENU FUNCTIONS AND LOGICS
@@ -81,5 +80,42 @@ public function showemployee(){
         $allemployee=$employee->all();
         return view('User.employeepanel', compact('allemployee'));
     }
-   
+    public function editemployeelogic(Request $req, $id){
+     $employee = Employee::find($id);
+        return view('user.editemployee', compact('employee'));  
+    }   
+    public function updateemployee(Request $req, $id){
+        $employee=Employee::find($id);
+        $employee->name = $req->name;
+         $employee->email = $req->email;
+          $employee->password = $req->password;
+           $employee->number = $req->number;
+           $employee->save();
+            if (
+    $req->name !="" &&
+    $req->email !="" &&
+    $req->password !="" &&
+    $req->number !="" &&
+    $req->department !=""
+) 
+          return redirect('/staffportal/' . $employee->id);
+    }
+    public function staffportal($id)
+{
+    $employee     = Employee::findOrFail($id);
+    $appointments = Appointment::latest()->get();
+
+    return view('user.staffhome', compact('employee', 'appointments'));
+}
+   public function employeelogin(Request $req )
+{
+    $employee = Employee::where('email', $req->email)
+                        ->where('password', $req->password)
+                        ->first();
+    if ($employee) {
+        return redirect('/staffportal/' . $employee->id);
+    }
+    return back()->with('error', 'Invalid email or password');
+}
+
 }

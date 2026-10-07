@@ -1169,3 +1169,11 @@ top: 0;
     max-width: 350px;
   }
 }
+/* Fill empty image space with card color */
+.food_section .box .img-box {
+    background-color: #222831 !important;
+}
+
+.food_section .box .img-box img {
+    background-color: #222831;
+}
