@@ -70,7 +70,11 @@
 <body>
    <div class="container">
         <img class="logo" src="images/logo with background.png" alt="">
-        
+        @if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
         <form action="/employeelogin" method="post">
             @csrf
             <h2 class="heading_container heading_center">Log In</h2>

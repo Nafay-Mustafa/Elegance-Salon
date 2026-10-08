@@ -107,15 +107,28 @@ public function showemployee(){
 
     return view('user.staffhome', compact('employee', 'appointments'));
 }
-   public function employeelogin(Request $req )
+  public function employeelogin(Request $req)
 {
     $employee = Employee::where('email', $req->email)
                         ->where('password', $req->password)
                         ->first();
+
     if ($employee) {
+
+        // Save employee ID in session
+        session(['employee_id' => $employee->id]);
+
+        // Redirect to staff home
         return redirect('/staffportal/' . $employee->id);
     }
+
     return back()->with('error', 'Invalid email or password');
+}
+public function employeelogout(Request $req)
+{
+    $req->session()->forget('employee_id');
+
+    return redirect('/employeelogin');
 }
 
 }

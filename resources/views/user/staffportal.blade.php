@@ -98,6 +98,14 @@
                                 <button type="submit" class="nav-link nav-link-btn">Edit Profile</button>
                             </form>
                         </li>
+                        <li class="nav-item">
+    <form action="{{ route('employee.logout') }}" method="POST" class="m-0">
+        @csrf
+        <button type="submit" class="nav-link nav-link-btn">
+            Logout
+        </button>
+    </form>
+</li>
                     </ul>
                 </div>
             </nav>

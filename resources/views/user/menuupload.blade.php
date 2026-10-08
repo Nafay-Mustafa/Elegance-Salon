@@ -16,12 +16,14 @@
     </head>
 
     <body>
+        
 <div class="container">
+    <br>
     <h1>UPLOAD MENU</h1>
     <br>
     <form action="/menuupload" method="post" enctype="multipart/form-data">
     @csrf
-    <input  type="file"  name="image" id="" class="p-2 m-2"> 
+    <input  type="file"  name="image" id="" class="p-2 m-2">
     <br>
     <input type="text" name="heading" id="" placeholder="Heading" class="form-control " >
     <br>

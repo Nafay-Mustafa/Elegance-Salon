@@ -91,3 +91,5 @@ Route::get('/employeelogin', function () {
 });
 Route::get('/staff/appointments', [AppointmentController::class, 'index'])
     ->name('staff.appointments');
+    Route::post('/employeelogout', [admincontroller::class, 'employeelogout'])
+    ->name('employee.logout');
