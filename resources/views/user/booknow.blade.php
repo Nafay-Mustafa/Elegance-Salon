@@ -99,7 +99,7 @@
 <div class="custom-select-wrapper" style="position:relative; width:100%;">
     <input type="hidden" name="status" id="statusHidden">
     <div id="customSelectBox" style="border:1px solid #ccc; padding:12px; border-radius:6px; background:#fff; cursor:pointer;">
-        Select Service / Status
+        Select Service
     </div>
     <div id="customOptions" style="display:none; position:absolute; top:100%; left:0; right:0; background:#fff; border:1px solid #ccc; border-radius:6px; max-height:150px; overflow-y:auto; z-index:9999; margin-top:5px; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
         <div class="opt" data-value="Basic Facial 1000/-" style="padding:10px 12px; cursor:pointer;">Basic Facial 1000/-</div>
