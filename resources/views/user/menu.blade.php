@@ -32,13 +32,13 @@
         </h2>
       </div>
 
-      <ul class="filters_menu">
+      <!-- <ul class="filters_menu">
         <li class="active" data-filter="*">All</li>
         <li data-filter=".burger">Engagemet/Nikkah Makeup</li>
         <li data-filter=".pizza">Mayoun/Mehndi</li>
         <li data-filter=".pasta">Baraat Makeup</li>
         <li data-filter=".fries">Valima Makeup</li>
-      </ul>
+      </ul> -->
 
       <div class="filters-content">
        <div class="row grid">

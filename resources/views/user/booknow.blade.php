@@ -89,7 +89,7 @@
         <br>
         <input type="email" name="email" id="" placeholder="Your Email" class="form-control" required>
         <br>
-        <input type="number" name="phone" id="" placeholder="Your Contact Number" class="form-control" required>
+        <input type="text" name="phone" id="" placeholder="Your Contact Number" class="form-control" required>
         <br>
         <input type="date" name="date" id="" class="form-control" required min="{{ date('Y-m-d') }}" id="appointment_date">
         <br>

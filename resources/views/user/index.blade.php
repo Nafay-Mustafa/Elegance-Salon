@@ -1138,7 +1138,7 @@
         <input type="text" name="name" class="form-control" placeholder="Your Name" required />
     </div>
     <div>
-        <input type="number" name="phone" class="form-control" placeholder="Phone Number" required />
+        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required />
     </div>
     <div>
         <input type="email" name="email" class="form-control" placeholder="Your Email" required />
