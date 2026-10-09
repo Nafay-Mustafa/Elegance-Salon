@@ -3,7 +3,7 @@
 <style>
     /* Accordion container */
 .accordion {
-    max-width: 1000px;
+    max-width: 1520px;
     margin: 30px auto;
 }
 
